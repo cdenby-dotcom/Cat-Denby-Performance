@@ -1,0 +1,139 @@
+.Hero{
+    width: 100%;
+    // width: 1352px;
+    margin: 0 auto;
+    height:calc(100vh - 85.33px);
+    // border: 1px solid red;
+    overflow-y: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+
+    img{
+        width: 100%;
+        height: 100%;
+        // object-position: top;
+        object-fit: cover;
+        position:absolute;
+        left: 0;
+        top: 0;        
+        // display: none;
+    }
+
+    .heroOverlay {
+        position: absolute;
+        inset: 0;
+        // z-index: 100;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+        }
+
+        &::before {
+            background: linear-gradient(
+            to right,
+            #0b0b0b 0%,
+            rgba(11, 11, 11, 0.8) 50%,
+            transparent 100%
+            );
+        }
+
+        &::after {
+            background: linear-gradient(
+            to top,
+            #0b0b0b 0%,
+            transparent 50%,
+            rgba(11, 11, 11, 0.5) 100%
+            );
+        }
+    }
+
+    .intro{
+        // border: 1px solid red;
+        z-index: 1000;
+        position: absolute;
+
+        width: 672px;
+        max-width: 100%;
+        min-height: 428px;
+        // margin: 0 0 0 150px;
+        margin: 0 0 0 9.1%;
+
+        h1, p{
+            font-weight: 100;
+            // display: none;
+        }
+
+
+        .redPTag{
+            color: red;
+        }
+
+        h1{
+            color: white;
+            // font-size: 92px;
+            margin: 25px 0;
+            // border: 1px solid red;
+        }
+
+        span{
+            color: red;
+        }
+
+
+        .btns{
+            margin: 25px 0;
+            display: flex;
+            gap: 0 15px;
+            // border: 1px solid red;
+        }
+    }
+
+}
+
+@media (max-width: 844px){
+
+    .Hero{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        .intro{
+            position: unset;
+            margin: unset;
+            width: 550px;
+            padding: 0 15px;
+            // border: 1px solid red;
+            
+
+            h1{
+                // font-size: 48px;
+            }
+        }
+    }
+    
+
+}
+
+@media (max-width: 768px){
+    .Hero{
+            height:calc(100vh - 80px);
+
+    }
+}
+
+// @media (max-width: 460px){
+//     .Hero{
+//             .intro{
+
+//                 h1{
+//                     font-size: 40px;
+//                 }
+//             }
+
+//     }
+// }
