@@ -28,7 +28,7 @@ function ClientSection() {
       description: "Functional strength training for peak athletic performance",
     },
     {
-      image: "/assets/images/client-andrea.jpg",
+      image: "/assets/images/client-andrea.JPG",
       name: "Andrea",
       sport: "Endurance Running",
       description:

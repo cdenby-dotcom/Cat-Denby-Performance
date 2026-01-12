@@ -8,7 +8,7 @@ function ContactSection() {
      const {contactRef} = useScroll()
 
     const contactDetails = [
-        {svg: <CiMail /> , method: "Email" , contactDetail: "@catherinedenbypersonaltraining.com"},
+        {svg: <CiMail /> , method: "Email" , contactDetail: "@hello@catherinedenbypersonaltraining.com"},
         {svg: <CiPhone/>, method: "Phone / Whatsapp", contactDetail: "(+44) 07415772785"},
         {svg: <CiLocationOn/>, method: "Training Location", contactDetail: "KO Combat Academy", address: "188 Bancroft Road, London, E1 4ET"},
         {svg: <CiClock2  />, method: "Available Hours" , contactDetail:"Monday - Saturday: 7am - 1pm" },
