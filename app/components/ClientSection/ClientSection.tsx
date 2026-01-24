@@ -1,10 +1,38 @@
 import React from 'react'
 import styles from "./ClientSection.module.scss"
 import { useScroll } from '@/app/contexts/scrollContext';
+import { IoIosStar } from "react-icons/io";
 
 function ClientSection() {
 
   const {clientsRef} = useScroll()
+
+  const testimonials = [{
+    name: "Patrick",
+    initial: "P",
+    occupation: "MMA Fighter",
+    testimony: "“The strength gains have completely changed my fight performance.”"
+  },{
+    name: "Alice",
+    initial: "A",
+    occupation: "Lawyer",
+    testimony: "“I feel like I’m using my body properly for the first time in years.”"
+  },{
+    name: "Kat",
+    initial: "K",
+    occupation: "Dancer",
+    testimony: "“She understands how to challenge me in a way that supports my disability, not limits it.”"
+  },{
+    name: "Andrea",
+    initial: "A",
+    occupation: "Business Consultant",
+    testimony: "“Since training with Cat, my migraines and back pain have stopped. I move better, feel stronger, and know how to manage my posture.”"
+  },{
+    name: "T",
+    initial: "T",
+    occupation: "Enginner",
+    testimony: "“She collaborates with physios and listens to how my body feels each session — that’s rare in a coach.”"
+  },]
   
 
   const clients1 = [
@@ -68,6 +96,28 @@ function ClientSection() {
             From competitive fighters to dedicated athetes <span></span> real
             results from real training
           </p>
+        </div>
+
+        <div className={styles.testimonials}>
+          {testimonials.map((i, n) => (
+            <div key={n} className={styles.clientTestimony}>
+              <div className={styles.stars}>
+                <IoIosStar />
+                <IoIosStar />
+                <IoIosStar />
+                <IoIosStar />
+                <IoIosStar /></div>
+              <p className={`${styles.white} ${styles.testimony}`}>{i.testimony}</p>
+              
+              <div className={styles.clientDetail}>
+                <span className={styles.ClientInitial}>{i.initial}</span>
+                <div>
+                  <p className={styles.white}>{i.name}</p>
+                  <p>{i.occupation}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className={styles.clients}>

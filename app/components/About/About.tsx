@@ -16,25 +16,30 @@ function About() {
     <div className={styles.About} ref={aboutRef}>
         <div className={styles.container}>
         <div className={styles.description}>
-          <p className={`${styles.red} ${styles.title}`}>ABOUT</p>
+          <p className={`${styles.red} ${styles.title}`}>ABOUT ME</p>
 
           <h2>
             SCIENCE-DRIVEN <span className={styles.red}>PERFORMANCE</span>
           </h2>
 
+          <p>Hi I’m Cat and I’m a personal trainer</p>
+
           <p>
-            I'm a strength & conditioning coach with a Master's in Sports Science.
-            My journey has taken me from NBA training facilities to professional
-            boxing camps and elite football clubs.
+            I combine academic expertise and practical experience to deliver personal training for
+            all levels that’s personalised and goal driven. I hold an MSc in Applied Sports Science  with a focus on Strength & Conditioning, have experience working in the NBA, with professional boxers and running a PT business for over 10 years.
+
           </p>
           <p>
-            I work exclusively with athletes who have competitive goals — whether
-            you're stepping into the ring, toeing the start line, or competing at
-            the highest levels of your sport.
+            My journey began as an athlete; from youth football and tennis to boxing and back to
+            football. Now, I apply this lived experience, alongside current sports science, to support
+            people across all levels of training, from elite athletes to people who have never
+            stepped foot in a gym before. Whatever your level I aim to make training friendly, fun
+            and science based. 
           </p>
           <p>
-            This isn't about "getting fit." It's about leveraging sports science
-            to unlock performance gains you didn't know were possible.
+            I currently work in-house in a leading martial arts academy and offer 1-1 coaching,
+            consultancy, and team training across a range of sports.’
+
           </p>
 
           <div className={styles.experience}>
@@ -59,7 +64,7 @@ function About() {
               </li>
               <li>
                 <BsFillCheckCircleFill />
-                <span>Professional boxing and football clubs</span>
+                <span>All levels welcome</span>
               </li>
               <li>
                 <BsFillCheckCircleFill />

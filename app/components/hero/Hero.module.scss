@@ -22,36 +22,57 @@
         // display: none;
     }
 
+    // .heroOverlay {
+    //     position: absolute;
+    //     inset: 0;
+    //     // z-index: 100;
+
+    //     &::before,
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         inset: 0;
+    //     }
+
+    //     &::before {
+    //         background: linear-gradient(
+    //         to right,
+    //         #0b0b0b 0%,
+    //         rgba(255, 132, 0, 0.8) 50%,
+    //         transparent 100%
+    //         );
+    //     }
+
+    //     &::after {
+    //         background: linear-gradient(
+    //         to top,
+    //         #0b0b0b 0%,
+    //         transparent 50%,
+    //         rgba(11, 11, 11, 0.5) 100%
+    //         );
+    //     }
+    // }
+
     .heroOverlay {
-        position: absolute;
-        inset: 0;
-        // z-index: 100;
+        
+  position: absolute;
+  inset: 0;
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-        }
+  background:
+    linear-gradient(
+      to right,
+      rgb(247, 247, 247) 0%,
+      rgba(247, 247, 247, 0.8) 50%,
+      rgba(247, 247, 247, 0) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(247, 247, 247, 1) 0%,
+      rgba(247, 247, 247, 0) 50%,
+      rgba(247, 247, 247, 0.5) 100%
+    );
+}
 
-        &::before {
-            background: linear-gradient(
-            to right,
-            #0b0b0b 0%,
-            rgba(11, 11, 11, 0.8) 50%,
-            transparent 100%
-            );
-        }
-
-        &::after {
-            background: linear-gradient(
-            to top,
-            #0b0b0b 0%,
-            transparent 50%,
-            rgba(11, 11, 11, 0.5) 100%
-            );
-        }
-    }
 
     .intro{
         // border: 1px solid red;
@@ -72,10 +93,12 @@
 
         .redPTag{
             color: red;
+            color: #f9710b;
         }
 
         h1{
             color: white;
+            color: black;
             // font-size: 92px;
             margin: 25px 0;
             // border: 1px solid red;
@@ -83,6 +106,7 @@
 
         span{
             color: red;
+            color: #f9710b;
         }
 
 

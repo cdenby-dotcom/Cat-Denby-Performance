@@ -4,6 +4,8 @@ import styles from "./CustomButton.module.scss";
 
 const CustomButton = (props: any) => {
   const backgroundColor = props.backgroundColor;
+  const color = props.color
+  const border = props.border
   const href = props.href;
   // console.log(background)
 
@@ -12,7 +14,7 @@ const CustomButton = (props: any) => {
   return (
     <button
       className={styles.Btn}
-      style={{backgroundColor: backgroundColor}}
+      style={{backgroundColor: backgroundColor, color: color, border: border}}
       onClick={props.onClick}
     >
       {props.value}

@@ -1,8 +1,9 @@
 .About{
     width: 100%;
     min-height: calc(100vh - 85.33px);
-    background-color: black;
-    background-color: #100f0f;
+    // background-color: black;
+    // background-color: #100f0f;
+    
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -40,6 +41,11 @@
         
         .red{
             color: red;
+            color: #f9710b;
+        }
+
+        h2{
+          color: black;
         }
 
         // h2{
@@ -77,6 +83,7 @@
             background-color: #EC131333;
             border-radius: 50%;
             color: red;
+            color: #f9710b;
             width: 20px;
             height: 20px;
             margin-right: 7px;
@@ -85,6 +92,7 @@
 
         span{
             font-size: 18px;
+            color: black;
         }
         
 
@@ -109,7 +117,7 @@
   aspect-ratio: 1 / 1;
   position: relative;
 
-  background-color: #0f0f0f;       // bg-card equivalent
+  background-color: #ffffff;       // bg-card equivalent
   border: 1px solid #2a2a2a;       // border-border equivalent
   border-radius: 0.5rem;           // rounded-lg
   overflow: hidden;
@@ -127,7 +135,8 @@
 
     background: linear-gradient(
       to bottom right,
-      rgba(196, 22, 28, 0.1),       // from-primary/10
+      rgba(255, 242, 211, 0.1),
+    rgba(255, 242, 211, 0),       // from-primary/10
       transparent                  // to-transparent
     );
 

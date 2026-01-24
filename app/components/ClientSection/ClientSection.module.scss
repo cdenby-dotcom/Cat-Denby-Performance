@@ -1,8 +1,9 @@
 .ClientSection{
 
     // border: 1px solid red;
-    background-color: black;
- background-color: #100f0f;
+//     background-color: black;
+//  background-color: #100f0f;
+background-color: rgb(252, 252, 252);
  padding: 0 20px;
 //  border: 1px solid rgb(212, 255, 0);
     
@@ -25,6 +26,7 @@
 
         .red{
             color: red;
+            color: #f9710b;
         }
 
 
@@ -32,10 +34,12 @@
         h2{
             // font-size: 60px;
             margin: 25px 0;
+            color: black;
         }
 
 
         .gradientOverlay {
+            display: none;
                     position: absolute;
                     inset: 0;
                     z-index: 2;
@@ -58,6 +62,7 @@
                 }
 
                 .description{
+                    display: none;
                     z-index: 2;
                     position: absolute;
                     bottom: 10px;
@@ -69,6 +74,101 @@
                     // justify-content: flex-end;
                     // background-color: green;
                 }
+
+
+        //                 <div className={styles.testimonials}>
+        //   {testimonials.map((i, n) => (
+        //     <div key={n} className={styles.testimony}>
+        //       <p>{i.testimony}</p>
+              
+        //       <div className={styles.clientDetail}>
+        //         <p className={styles.ClientInital}>{i.initial}</p>
+        //         <div>
+        //           <p>{i.name}</p>
+        //           <p>{i.sport}</p>
+        //         </div>
+        //       </div>
+        //     </div>
+        //   ))}
+        // </div>
+
+        .testimonials{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+                        margin: 0 0 50px 0;
+                        width: 100%;
+
+
+            .clientTestimony{
+                max-width: 100%;
+                width: 420px;
+                // background-color: #141414;
+                padding: 20px;
+                // border: 1px solid #2a2a2a;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: white;
+                border: 1px solid #604835;
+                border: 1px solid red;
+           }
+
+            svg{
+                margin: 0 5px;
+                width: 20px;
+                height: 20px;
+                fill: red;
+                fill: #f8cd6e;
+
+                
+            }
+
+            .testimony{
+                margin: 20px 0;
+            }
+
+            .white{
+                color: white;
+                color: black;
+            }
+
+            .clientDetail{
+                display: flex;
+                gap: 10px;
+
+                // border: 1px solid red;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    :last-child{
+                       color: #f9710b;
+                    }
+                }
+            }
+
+            .ClientInitial{
+                // color: red;
+                // color: #f9710b;
+                
+                // background-color: #4600001a;
+
+                background-color: #fcefe6;
+            color: #f9710b;
+                
+                border-radius: 50%;
+                height: 48px;
+                width: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
 
         //was clients1
 .clients{
@@ -119,7 +219,7 @@
                     display: inline-block;
                     // width: 95px;
                     // height: 25px;
-                    background-color: red;
+                    background-color: #f9710b;
                     border-radius: 7px;
                     padding: 5px;
                 }

@@ -1,6 +1,9 @@
 /* app/globals.css */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:ital,wght@0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Orbitron:wght@400..900&display=swap');
+
 // @import "tailwindcss";
 
 // :root {
@@ -25,7 +28,7 @@
 * {
   // background: var(--background);
   // color: var(--foreground);
-  // font-family: Arial, Helvetica, sans-serif;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -39,17 +42,21 @@
 h1,h2,h3,h4,h5,h6{
   line-height: 1;
   font-weight: 100;
+  color: black;
 }
 
 p{
-  color: #a6a6a6;            
+  color: #a6a6a6;
+  color: black;
+  // color: #f9710b;            
   font-size: 18px;
 }
 
 body {
-  font-family: "Inter, Bebas Neue", sans-serif;
+  font-family: "League Spartan", sans-serif;
       color: white;
-              background-color: #100f0f;
+              // background-color: #100f0f;
+              background-color: rgb(252, 252, 252);
 
   // padding: 0 20px;
 
@@ -57,8 +64,10 @@ body {
 }
 
 .Header{
-          background-color: black;
-        background-color: #100f0ffa;
+          // background-color: black;
+        // background-color: #100f0ffa;
+        background-color: white;
+        background-color: rgb(252, 252, 252);
         position: sticky;
         top: 0;
         left: 0;
@@ -89,8 +98,9 @@ body {
 
 
 .Footer{
-          background-color: black;
-        background-color: #100f0ffa;
+        //   background-color: black;
+        // background-color: #100f0ffa;
+        background-color: rgb(252, 252, 252);
         margin: 0 0 75px 0;
 
         z-index: 10000;

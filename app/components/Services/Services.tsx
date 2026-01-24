@@ -9,9 +9,14 @@ function Services() {
 
   const offeredServices = [{
     logo: <RxLightningBolt className={styles.logo} />,
+    sports: ["Weight-loss, Strength, Toning"],
+    title: "Personal Training",
+    description:"Personalised, friendly, fun 1-1 training with a focus on your goals. Get stronger, lose fat and gain muscle."
+  },{
+    logo: <RxLightningBolt className={styles.logo} />,
     sports: ["Boxing", "MMA", "Wrestling"],
     title: "COMBAT SPORTS",
-    description:"Periodized strength programs designed for fighters. Optimize power output, conditioning, and weight management while peaking for competition."
+    description:"Periodised strength programs designed for fighters. Optimize power output, conditioning, and weight management while peaking for competition."
   }, {
     logo: <RxTimer className={styles.logo}/>,
     sports: ["Runners", "Triathletes", "Cyclists"],

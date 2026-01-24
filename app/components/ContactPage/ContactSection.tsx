@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./ContactSection.module.scss"
-import {CiMail, CiPhone, CiLocationOn, CiClock2,CiInstagram } from "react-icons/ci";
+import {CiMail, CiPhone, CiLocationOn, CiClock2,CiInstagram, CiMemoPad } from "react-icons/ci";
 import { useScroll } from '@/app/contexts/scrollContext';
 
 function ContactSection() {
@@ -8,11 +8,11 @@ function ContactSection() {
      const {contactRef} = useScroll()
 
     const contactDetails = [
-        {svg: <CiMail /> , method: "Email" , contactDetail: "@hello@catherinedenbypersonaltraining.com"},
-        {svg: <CiPhone/>, method: "Phone / Whatsapp", contactDetail: "(+44) 07415772785"},
-        {svg: <CiLocationOn/>, method: "Training Location", contactDetail: "KO Combat Academy", address: "188 Bancroft Road, London, E1 4ET"},
+        {svg: <CiMail /> , method: "Email", href:"mailto:hello@catherinedenbypersonaltraining.com", contactDetail: "hello@catherinedenbypersonaltraining.com"},
+        {svg: <CiPhone/>, method: "Phone / Whatsapp", href:"tel:+447415772785", contactDetail: "(+44) 07415772785"},
+        {svg: <CiLocationOn/>, method: "Training Location", href:"https://www.google.com/maps/place/ko+combat+academy/data=!4m2!3m1!1s0x48761d8b58a2a535:0x7e331ff9b1f562a2?sa=X&ved=1t:242&ictx=111", externalLink:true, contactDetail: "KO Combat Academy", address: "188 Bancroft Road, London, E1 4ET"},
         {svg: <CiClock2  />, method: "Available Hours" , contactDetail:"Monday - Saturday: 7am - 1pm" },
-        {svg: <CiInstagram/>, method: "Instagram", contactDetail: "@Catd3nby"},
+        {svg: <CiInstagram/>, method: "Instagram", href:"https://www.instagram.com/catd3nby/", externalLink:true, contactDetail: "@Catd3nby"},
     ]
   return (
     <div className={styles.ContactSection} ref={contactRef}>
@@ -29,22 +29,62 @@ function ContactSection() {
 
         </div>
 
+        <div className={styles.intro}>
+                                <p className={styles.red}>READY TO LEVEL UP?</p>
+
+                    {/* <h2>LET'S BUILD YOUR <span className={styles.red}>WINNING EDGE</span></h2> */}
+                    <h2>WHAT I OFFER</h2>
+        </div>
+
         <div className={styles.subContainer}>
-                <div className={styles.intro}>
-                    <p className={styles.red}>READY TO LEVEL UP?</p>
+                <div className={styles.offers}>
 
-                    <h2>LET'S BUILD YOUR <span className={styles.red}>WINNING EDGE</span></h2>
+                    <div className={styles.offer}>
+                        <div className={styles.title}>
+                            <p className={styles.logo}>1:1</p>
+                            <div>
+                                <h3>COACHING</h3>
+                                <p className={styles.orange}>In-person & online</p>
+                            </div>
+                        </div>
 
-                    <p>Whether you're preparing for competition or pushing to the next level, let's create a program built on sports science and tailored to your goals.</p>
+                        <p>55-minute session including mobility, strength, and conditioning work.</p>
+
+                        <p>Sessions are designed to be challenging, but also fun. They are tailored to you and your goals.</p>
+                    </div>
+
+                                        <div className={styles.offer}>
+                        <div className={styles.title}>
+                            <CiMemoPad  className={styles.logo}/>
+                            <div>
+                                <h3>CONSULTANCY</h3>
+                                <p className={styles.orange}>In-person & online</p>
+                            </div>
+                        </div>
+
+                        <p>For teams and individuals:</p>
+
+                        <ul>
+                            <li>Warm-up protocols</li>
+                            <li>Weekly structures & periodisation</li>
+                            <li>Movement screening & testing</li>
+                            <li>Program design</li>
+                            <li>Recovery strategies</li>
+                        </ul>
+                    </div>
+
+                    {/* <p>Whether you're preparing for competition or pushing to the next level, let's create a program built on sports science and tailored to your goals.</p>
 
                     <ul>
-                        <li>Personalized programming based on your sport
+                        <li>55-minute session including mobility, strength, and conditioning work, designed to be challenging, but also fun. They are tailored to you and your
+goals.
+
         </li>
-                        <li>Evidence-based training methods
+                        <li>Consultancy &#40;In-person and online&#41;
         </li>
                         <li>Regular check-ins and program adjustments
         </li>
-                    </ul>
+                    </ul> */}
                 </div>
 
                 <div className={styles.contact}>
@@ -56,7 +96,9 @@ function ContactSection() {
                             
                             <div>
                                 <p>{i.method}</p>
-                                <p className={styles.white}>{i.contactDetail}</p>
+
+                                <a className={styles.white} href={i.href} target={i.externalLink ? "_blank" : ""} rel={i.externalLink ? "noopener noreferrer" : ""}>{i.contactDetail}</a>
+
                                 {i.address ? <p>{i.address}</p> : false}
                             </div>
                         </div>
