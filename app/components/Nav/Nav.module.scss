@@ -59,6 +59,7 @@
         span{
             font-size: 20px;
             display: block;
+            color: black;
         }
 
         .red{
@@ -88,6 +89,7 @@
                 color: white;
                 color: black;
                 color: #9b9a98;
+                color: #4d4d4d;
                 text-decoration: none;
                 font-size: 15px;
                 border: none;
@@ -145,9 +147,10 @@
         button{
 
             &:hover{
-                scale: (1.2);
+                scale: (1.1);
                 transition: 0.2s all;
                 color: black;
+                
             }
         }
     }

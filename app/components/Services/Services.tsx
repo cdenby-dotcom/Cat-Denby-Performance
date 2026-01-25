@@ -10,7 +10,7 @@ function Services() {
   const offeredServices = [{
     logo: <RxLightningBolt className={styles.logo} />,
     sports: ["Weight-loss, Strength, Toning"],
-    title: "Personal Training",
+    title: "PERSONAL TRAINING",
     description:"Personalised, friendly, fun 1-1 training with a focus on your goals. Get stronger, lose fat and gain muscle."
   },{
     logo: <RxLightningBolt className={styles.logo} />,
