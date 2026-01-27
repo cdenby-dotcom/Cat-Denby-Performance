@@ -33,7 +33,7 @@ function ContactSection() {
                                 <p className={styles.red}>READY TO LEVEL UP?</p>
 
                     {/* <h2>LET'S BUILD YOUR <span className={styles.red}>WINNING EDGE</span></h2> */}
-                    <h2>WHAT I OFFER</h2>
+                    <h2>WHAT I <span className={styles.red}>OFFER</span></h2>
         </div>
 
         <div className={styles.subContainer}>

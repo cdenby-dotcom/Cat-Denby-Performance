@@ -114,6 +114,7 @@ background-color: rgb(252, 252, 252);
                 background-color: white;
                 border: 1px solid #604835;
                 border: 1px solid red;
+                border: 1px solid #4d4d4d;
            }
 
             svg{
@@ -144,7 +145,7 @@ background-color: rgb(252, 252, 252);
                 div{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: space-around;
 
                     :last-child{
                        color: #f9710b;

@@ -137,7 +137,7 @@ function ClientSection() {
 
 
         <div className={styles.intro}>
-        <h2>IN THE TRENCHES</h2>
+        <h2>IN THE <span className={styles.red}>TRENCHES</span></h2>
         </div>
 
         {/* <div className={styles.clients2}>
