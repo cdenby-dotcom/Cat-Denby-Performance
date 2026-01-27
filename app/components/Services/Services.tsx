@@ -1,6 +1,14 @@
 import React from 'react'
 import styles from "./Services.module.scss"
-import { RxLightningBolt, RxTimer, RxArrowRight } from "react-icons/rx";
+import { RxPerson, RxLightningBolt, RxTimer, RxArrowRight } from "react-icons/rx";
+import { GiWeightLiftingUp } from "react-icons/gi";
+import { IoIosFitness } from "react-icons/io";
+import { IoMdFitness } from "react-icons/io";
+import { CgGym } from "react-icons/cg";
+import { MdOutlineFitnessCenter } from "react-icons/md";
+import { MdFitnessCenter } from "react-icons/md";
+import { IoFitnessOutline } from "react-icons/io5";
+
 import { useScroll } from '@/app/contexts/scrollContext';
 
 function Services() {
@@ -8,8 +16,8 @@ function Services() {
   const {servicesRef, contactRef} = useScroll()
 
   const offeredServices = [{
-    logo: <RxLightningBolt className={styles.logo} />,
-    sports: ["Weight-loss, Strength, Toning"],
+    logo: <RxPerson  className={styles.logo} />,
+    sports: ["Weight-loss", "Strength", "Toning"],
     title: "PERSONAL TRAINING",
     description:"Personalised, friendly, fun 1-1 training with a focus on your goals. Get stronger, lose fat and gain muscle."
   },{

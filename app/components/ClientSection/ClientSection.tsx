@@ -30,7 +30,7 @@ function ClientSection() {
   },{
     name: "T",
     initial: "T",
-    occupation: "Enginner",
+    occupation: "Engineer",
     testimony: "“She collaborates with physios and listens to how my body feels each session — that’s rare in a coach.”"
   },]
   

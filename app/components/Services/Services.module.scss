@@ -67,6 +67,7 @@
             color: red;
             color: #f9710b;
             
+            
             border-radius: 50%;
             padding: 4px;
         }
@@ -74,8 +75,9 @@
         .sports{
             display: flex;
             align-items: center;
-            color: red;
-            color: #f9710b;
+            // color: red;
+            // color: #f9710b;
+            color: black;
         }
 
         .circles{
@@ -83,7 +85,7 @@
             width: 4px;
             height: 4px;
             border-radius: 50%;
-            background-color: red;
+            background-color: #f9710b;
             margin: 0 5px;
             
         }
@@ -91,6 +93,7 @@
         h3{
             font-size: 30px;
             color: black;
+            color: #f9710b;
         }
 
         
@@ -125,6 +128,7 @@
             }
 
             &:hover{
+                color: #f9710b;
 
                 svg{
                     margin: 0 0 0 10px;
