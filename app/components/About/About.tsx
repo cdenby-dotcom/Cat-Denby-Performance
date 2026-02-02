@@ -5,11 +5,15 @@ import styles from "./About.module.scss"
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { useScroll } from '@/app/contexts/scrollContext';
 
-function About() {
+
+function About(props: {opacity: number}) {
 
   const {aboutRef} = useScroll()
 
   console.log(aboutRef)
+
+  const {opacity} = props
+  console.log(opacity)
 
 
   return (

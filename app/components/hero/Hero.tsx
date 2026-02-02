@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./Hero.module.scss"
 import CustomButton from '../customButton/CustomButton';
 import { useScroll } from '@/app/contexts/scrollContext';
+import Image from "next/image";
 
 function Hero() {
   const { homeRef, aboutRef, servicesRef, clientsRef, contactRef } = useScroll();
@@ -31,10 +32,18 @@ function Hero() {
     };
   return (
     <div className={styles.Hero} ref={homeRef}>
-      <img src="/assets/images/coaching-martin-2.JPG" />
+      <div className={styles.container}>
+      {/* <img src="/assets/images/coaching-martin-2.JPG" /> */}
+      {/* <Image src="/assets/images/coaching-martin-3.JPG"
+      alt='hero' 
+      className={styles.img}
+      width={'100%'}/> */}
+      {/* <div className={styles.img} ></div> */}
+      {/* <img src="/assets/images/catherine-hero.JPG" /> */}
 
-      <div className={styles.heroOverlay}></div>
+      {/* <div className={styles.heroOverlay}></div> */}
       {/* <div class="gradient-overlay"></div> */}
+      
 
 
       <div className={styles.intro}>
@@ -52,6 +61,12 @@ function Hero() {
           <CustomButton value="START TRAINING" backgroundColor="#f9710b;" border="none" onClick={() => scrollTo(contactRef)} />
           <CustomButton value="VIEW SERVICES" backgroundColor="transparent" color="black" border="1px solid #A6A6A6" onClick={() => scrollTo(servicesRef)}/>
         </div>
+      </div>
+
+        <div className={styles.imgContainer}>
+        <div className={styles.heroOverlay}></div>
+        <img src="/assets/images/coaching-martin-2.JPG" />
+      </div>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@
     padding: 0 20px;
     // border-top: 1px solid #f9710b;
     // margin: 20px 0 0 0;
+    // border: 1px solid red;
 
 
 
@@ -54,7 +55,9 @@
 
 .intro{
     text-align: center;
-    margin: 100px 0 0 0;
+    // margin: 100px 0 0 0;
+    margin: 50px 0;
+    // border: 1px solid red;
 }
 
         .red{
@@ -64,7 +67,7 @@
 
         h2{
             // font-size: 60px;
-            margin: 35px 0;
+            margin: 35px 0 0 0;
             color: black;
         }
 
@@ -252,7 +255,7 @@
 
 @media (max-width: 768px){
     .ContactSection{
-        margin: 75px 0;
+        // margin: 75px 0;
             min-height: calc(100vh - 80px);
 
             .contact{

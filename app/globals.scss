@@ -139,15 +139,20 @@ body {
 
 h1{
   font-size: 86px;
+  font-size: 78px;
 }
 
 h2{
   font-size: 60px;
 }
 
-@media (max-width: 844px){
+@media (max-width: 1240px){
   h1{
     font-size: 55px;
+  }
+
+  h2{
+    font-size: 50px;
   }
 }
 
