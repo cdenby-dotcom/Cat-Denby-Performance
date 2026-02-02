@@ -78,7 +78,15 @@ function About(props: {opacity: number}) {
           </div>
         </div>
 
+        {/* <img src="/assets/images/client-venus.jpg" className={styles.card}/> */}
+
         <div className={styles.card}>
+
+          
+                  <div className={styles.imgContainer}>
+        <div className={styles.heroOverlay}></div>
+       <img src="/assets/images/client-venus.jpg"/>
+      </div>
 
           <div className={styles.circle1}></div>
           <div className={styles.circle2}></div>

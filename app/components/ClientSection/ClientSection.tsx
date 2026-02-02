@@ -50,7 +50,7 @@ function ClientSection() {
       description: "Elite cage training and competition-ready conditioning",
     },
     {
-      image: "/assets/images/client-venus.jpg",
+      image: "/assets/images/client-donna.jpg",
       name: "Venus",
       sport: "Strength & Conditioning",
       description: "Functional strength training for peak athletic performance",
@@ -67,16 +67,16 @@ function ClientSection() {
 
   const clients2 = [
     {
+      image: "/assets/images/coaching-monique.JPG",
+      description: "The moments that make it all worth it",
+    },
+    {
       image: "/assets/images/coaching-martin-1.jpg",
       description: "Building strength, one rep at a time",
     },
     {
       image: "/assets/images/coaching-mo.jpg",
       description: "Hands-on technique correction",
-    },
-    {
-      image: "/assets/images/coaching-martin-2.JPG",
-      description: "The moments that make it all worth it",
     },
     {
       image: "/assets/images/coaching-catherine.PNG",
