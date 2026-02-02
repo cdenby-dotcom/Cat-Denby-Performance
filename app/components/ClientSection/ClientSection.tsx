@@ -67,7 +67,7 @@ function ClientSection() {
 
   const clients2 = [
     {
-      image: "/assets/images/coaching-monique.JPG",
+      image: "/assets/images/coaching-monique.jpg",
       description: "The moments that make it all worth it",
     },
     {
