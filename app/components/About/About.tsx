@@ -26,7 +26,7 @@ function About(props: {opacity: number}) {
             SCIENCE-DRIVEN <span className={styles.red}>PERFORMANCE</span>
           </h2>
 
-          <p>Hi I’m Cat and I’m a personal trainer</p>
+          <p>Hi I’m Cat and I’m a personal trainer.</p>
 
           <p>
             I combine academic expertise and practical experience to deliver personal training for
@@ -42,7 +42,7 @@ function About(props: {opacity: number}) {
           </p>
           <p>
             I currently work in-house in a leading martial arts academy and offer 1-1 coaching,
-            consultancy, and team training across a range of sports.’
+            consultancy, and team training across a range of sports.
 
           </p>
 

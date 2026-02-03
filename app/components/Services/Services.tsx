@@ -59,7 +59,7 @@ function Services() {
       <div className={styles.intro}>
         <p className={styles.red}>SERVICES</p>
         <h2>BUILT FOR <span className={styles.red}>ATHLETES</span></h2>
-        <p>Not general fitness. Not weight loss programs. Performance coaching grounded in sports science for athletes with competitive goals.</p>
+        <p>Not general fitness. Not weight loss programs. Performance coaching grounded in sports science for individuals with performance goals.</p>
       </div>
 
       <div className={styles.container}>

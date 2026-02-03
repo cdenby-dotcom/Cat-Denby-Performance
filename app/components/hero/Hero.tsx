@@ -3,6 +3,8 @@ import styles from "./Hero.module.scss"
 import CustomButton from '../customButton/CustomButton';
 import { useScroll } from '@/app/contexts/scrollContext';
 import Image from "next/image";
+import { PiMouseMiddleClickFill } from "react-icons/pi";
+import { FaCircleArrowDown } from "react-icons/fa6";
 
 function Hero() {
   const { homeRef, aboutRef, servicesRef, clientsRef, contactRef } = useScroll();
@@ -50,7 +52,7 @@ function Hero() {
         <p className={styles.redPTag}>ELITE COACHING</p>
 
         <h1>
-          ELEVATE YOUR ATHLETIC <span>PERFORMANCE</span>
+          ELEVATE YOUR <span>PERFORMANCE</span>
         </h1>
 
         <p>
@@ -68,6 +70,35 @@ function Hero() {
         <img src="/assets/images/coaching-martin-2.JPG" />
       </div>
       </div>
+
+      {/* <div className={styles.hehe}>
+
+        <div className={styles.experiences}>
+          <div>
+            <h3 className={styles.orange}>NBA</h3>
+            <p>PROFESSIONAL EXPERIENCE</p>
+          </div>
+
+          <div>
+            <h3 className={styles.orange}>10+</h3>
+            <p>YEARS COACHING</p>
+          </div>
+
+          <div>
+            <h3 className={styles.orange}>NBA</h3>
+            <p>ATHLETES TRAINED</p>
+          </div>
+
+          <div>
+            <h3 className={styles.orange}>NBA</h3>
+            <p>PROFESSIONAL EXPERIENCE</p>
+          </div>
+                    
+        </div>
+
+      </div> */}
+
+      {/* <FaCircleArrowDown className={styles.mouseSVG} onClick={() => scrollTo(aboutRef)}/> */}
     </div>
   );
 }

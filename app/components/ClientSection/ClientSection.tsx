@@ -120,6 +120,10 @@ function ClientSection() {
           ))}
         </div>
 
+        <div className={styles.intro}>
+        <h2>IN THE <span className={styles.red}>TRENCHES</span></h2>
+        </div>
+
         <div className={styles.clients}>
           {clients1.map((i, n) => (
             <div key={n} className={styles.client}>
@@ -136,9 +140,7 @@ function ClientSection() {
         </div>
 
 
-        <div className={styles.intro}>
-        <h2>IN THE <span className={styles.red}>TRENCHES</span></h2>
-        </div>
+        
 
         {/* <div className={styles.clients2}>
           {clients2.map((i) => (

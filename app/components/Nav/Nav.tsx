@@ -103,7 +103,7 @@ function Nav(props: {header: boolean}) {
       <nav className={header ? styles.Nav : `${styles.Nav} ${styles.FooterNav}`} >
         <div className={styles.menuContainer} style={{justifyContent: header ? "space-between" : "center"}}>
 
-           <button className={styles.logo} onClick={() => scrollTo(homeRef)}><span className={styles.red}>CATHERINE DERBY</span><span>PERFORMANCE</span></button>
+           <button className={styles.logo} onClick={() => scrollTo(homeRef)}><span className={styles.red}>CAT DENBY</span><span>PERFORMANCE</span></button>
 
           {header ? <div
             className={showMenu ? `${styles.menu} ${styles.open}` : styles.menu}
