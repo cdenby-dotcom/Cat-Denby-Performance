@@ -54,7 +54,7 @@ function ContactSection() {
 
                         <p>Sessions are designed to be challenging, but also fun. They are tailored to you and your goals.</p>
 
-                        <p className={styles.pLocationPinSVG}><FaMapPin  className={styles.locationPinSVG} /> KO gym, Bethnal Green, London</p>
+                        <a className={styles.pLocationPinSVG} href="https://www.google.com/maps/place/ko+combat+academy/data=!4m2!3m1!1s0x48761d8b58a2a535:0x7e331ff9b1f562a2?sa=X&ved=1t:242&ictx=111" target="_blank" rel="noopener noreferrer"><FaMapPin  className={styles.locationPinSVG} /> KO gym, Bethnal Green, London</a>
                     </div>
 
                                         <div className={styles.offer}>
