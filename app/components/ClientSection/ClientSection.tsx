@@ -93,7 +93,7 @@ function ClientSection() {
           <h2>ATHLETES I WORK WITH</h2>
 
           <p>
-            From competitive fighters to dedicated athetes <span></span> real
+            From competitive fighters to dedicated athetes, <span></span> real
             results from real training
           </p>
         </div>

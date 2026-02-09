@@ -56,7 +56,7 @@ function Hero() {
         </h1>
 
         <p>
-          Friendly science based inclusive personal training individually tailored to you and your goals
+          Friendly science based inclusive personal training individually tailored to you and your goals.
         </p>
 
         <div className={styles.btns}>
