@@ -40,7 +40,7 @@ function ContactSection() {
         <div className={styles.subContainer}>
                 <div className={styles.offers}>
 
-                    <div className={styles.offer}>
+                    <div className={styles.offer} style={{paddingLeft: "20px", paddingRight: "20px"}}>
                         <div className={styles.cornerGradient}></div>
                         <div className={styles.title}>
                             <p className={styles.logo}>1:1</p>
