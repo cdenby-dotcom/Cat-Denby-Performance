@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from "./ContactSection.module.scss"
-import {CiMail, CiPhone, CiLocationOn, CiClock2,CiInstagram, CiMemoPad } from "react-icons/ci";
+import {CiMail, CiPhone, CiLocationOn, CiClock2,CiInstagram, CiMemoPad, CiMapPin  } from "react-icons/ci";
 import { useScroll } from '@/app/contexts/scrollContext';
-
+import { GrLocationPin } from "react-icons/gr";
+import { FaMapPin } from "react-icons/fa";
 function ContactSection() {
 
      const {contactRef} = useScroll()
@@ -40,6 +41,7 @@ function ContactSection() {
                 <div className={styles.offers}>
 
                     <div className={styles.offer}>
+                        <div className={styles.cornerGradient}></div>
                         <div className={styles.title}>
                             <p className={styles.logo}>1:1</p>
                             <div>
@@ -51,9 +53,12 @@ function ContactSection() {
                         <p>55-minute session including mobility, strength, and conditioning work.</p>
 
                         <p>Sessions are designed to be challenging, but also fun. They are tailored to you and your goals.</p>
+
+                        <p className={styles.pLocationPinSVG}><FaMapPin  className={styles.locationPinSVG} /> KO gym, Bethnal Green, London</p>
                     </div>
 
                                         <div className={styles.offer}>
+                                            <div className={styles.cornerGradient}></div>
                         <div className={styles.title}>
                             <CiMemoPad  className={styles.logo}/>
                             <div>
@@ -88,19 +93,19 @@ goals.
                 </div>
 
                 <div className={styles.contact}>
-                    <h3>GET IN TOUCH</h3>
+                    {/* <h3>GET IN TOUCH</h3> */}
 
                     {contactDetails.map((i, n) => 
                         <div className={styles.details} key={n}>
                             {i.svg}
                             
-                            <div>
+                            {/* <div> */}
                                 <p>{i.method}</p>
 
                                 <a className={styles.white} href={i.href} target={i.externalLink ? "_blank" : ""} rel={i.externalLink ? "noopener noreferrer" : ""}>{i.contactDetail}</a>
 
                                 {i.address ? <p>{i.address}</p> : false}
-                            </div>
+                            {/* </div> */}
                         </div>
                     )}
                 </div>

@@ -118,7 +118,10 @@ function ClientSection() {
               </div>
             </div>
           ))}
-        </div>
+        </div></div>
+{/* style={{backgroundColor: "rgb(252, 252, 252)", width: "100%", padding: "0 200px", minHeight: "100vh"}} */}
+
+        <div className={styles.container2} >
 
         <div className={styles.intro}>
         <h2>IN THE <span className={styles.red}>TRENCHES</span></h2>
@@ -165,7 +168,8 @@ function ClientSection() {
             </div>
           ))}
         </div>
-      </div>
+        </div>
+      
     </div>
   );
 }

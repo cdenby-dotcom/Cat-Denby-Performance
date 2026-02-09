@@ -64,8 +64,13 @@ function Services() {
 
       <div className={styles.container}>
 
-        {offeredServices.map((i, n) => <div key={n} className={styles.service}>
+        
 
+        {offeredServices.map((i, n) => <div key={n} className={styles.service}>
+          <div className={styles.cornerGradient}></div>
+          {/* <div className={styles.cornerGradient} style={{left: "0"}}></div>
+          <div className={styles.cornerGradient} style={{bottom: "0", top: "unset"}}></div> */}
+          {/* <div className={styles.cornerGradient} style={{bottom: "0", top: "unset", left: "0"}}></div> */}
           {i.logo}
 
           <div className={styles.sports}>

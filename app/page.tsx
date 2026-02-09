@@ -27,7 +27,9 @@ export default function Home() {
   
   return (
     <ScrollContext.Provider value={{ homeRef, aboutRef, servicesRef, clientsRef, contactRef }}>
-    <div className="">
+    <div className="page">
+            <div className="aboutOverlay"></div>
+
       <header className="Header" id="Header">
         <Nav header={true}/>
         <div className="borderBottonDiv"></div>

@@ -9,6 +9,44 @@
 
     // border: 1px solid red;
 
+//     background:
+//   linear-gradient(
+//     180deg,
+//     rgba(249, 113, 11, 0.04) 0%,
+//     rgba(249, 113, 11, 0.00) 40%
+//   ),
+//   linear-gradient(
+//     135deg,
+//     #fafaf8 0%,
+//     #f4f2ef 100%
+//   );
+
+// background:
+//   radial-gradient(
+//     circle at 20% 30%,
+//     rgba(249, 113, 11, 0.06),
+//     transparent 60%
+//   ),
+//   linear-gradient(
+//     to right,
+//     #fafaf8 0%,
+//     #f6efe8 50%,
+//     #f2e6dc 100%
+//   );
+
+// background:
+//   linear-gradient(
+//     180deg,
+//     rgba(249, 113, 11, 0.04) 0%,
+//     rgba(249, 113, 11, 0.00) 40%
+//   ),
+//   linear-gradient(
+//     135deg,
+//     #fafaf8 0%,
+//     #f4f2ef 100%
+//   );
+
+
     .intro{
         width: 660px;
         max-width: 100%;
@@ -52,10 +90,15 @@
         min-height: 400px;
         border: 1px solid #f9710b;
         border: 1px solid #4d4d4d;
+        border: 1px solid rgb(0, 0, 0);
+        border: 1px solid #d4d4d3;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
+                    background-color: white;
+        position: relative;
+
+
         // align-items: flex-start;
         
 
@@ -66,6 +109,23 @@
         // background-color: #141414;
         border-radius: 7px;
         gap: 15px 0;
+
+
+        .cornerGradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;   // w-24
+  height: 100px;  // h-24
+//   border: 1px solid red;
+
+  background: linear-gradient(
+    to bottom left,
+    rgba(249, 114, 11, 0.09),  // from-primary/5
+    rgba(249, 113, 11, 0.0)    // to-transparent
+  );
+}
+
 
 
         .logo{
@@ -87,6 +147,8 @@
             // color: red;
             // color: #f9710b;
             color: black;
+            // border: 1px solid red;
+            // width: 100%;
         }
 
         .circles{
@@ -129,6 +191,8 @@
 @media (min-width: 769px){
     .Services{
 
+
+
         button{
             
 
@@ -156,6 +220,16 @@
 
         .service{
             max-width: 100%;
+
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .Services{
+
+        .service{
+            padding: 20px;
 
         }
     }
