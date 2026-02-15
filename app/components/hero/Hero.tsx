@@ -16,6 +16,7 @@ function Hero() {
   const imageRef = useRef<HTMLImageElement>(null)
   const introRef = useRef<HTMLDivElement>(null)
 
+  //
   useEffect(() => {
   const id = requestAnimationFrame(() => {
     window.scrollTo(0, 0);
