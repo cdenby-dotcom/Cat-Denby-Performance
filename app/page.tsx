@@ -10,6 +10,8 @@ import { ScrollContext } from "./contexts/scrollContext";
 import { useEffect, useRef, useState } from "react";
 import { FaRegCopyright } from "react-icons/fa";
 import Services from "./components/Services/Services";
+import gsap from "gsap"
+import { useGSAP } from '@gsap/react';
 
 export default function Home() {
 
@@ -21,9 +23,14 @@ export default function Home() {
 
   const [opacites, setOpacities] = useState([0,0,0,0])
 
-  useEffect(() => {
-
-  }, [])
+  useGSAP(() => {
+    gsap.fromTo(
+      '.Header',
+      {y: "-100%", autoAlpha: 0},
+      {y: 0, autoAlpha: 1, duration: 0.8, ease: "power2.out"
+      }
+    )
+  })
   
   return (
     <ScrollContext.Provider value={{ homeRef, aboutRef, servicesRef, clientsRef, contactRef }}>

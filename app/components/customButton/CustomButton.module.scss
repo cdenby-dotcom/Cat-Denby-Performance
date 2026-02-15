@@ -23,13 +23,19 @@
 }
 
 
+@media (max-width: 425px){
+
+    .Btn{
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 1240px){
 
     .Btn{
         max-width: unset;
     }
 }
-
 
 
 @media (min-width: 769px){

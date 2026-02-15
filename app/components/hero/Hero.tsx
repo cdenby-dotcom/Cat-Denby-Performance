@@ -1,13 +1,47 @@
 import React from 'react'
+import { useRef } from 'react';
 import styles from "./Hero.module.scss"
 import CustomButton from '../customButton/CustomButton';
 import { useScroll } from '@/app/contexts/scrollContext';
 import Image from "next/image";
 import { PiMouseMiddleClickFill } from "react-icons/pi";
 import { FaCircleArrowDown } from "react-icons/fa6";
+import gsap from "gsap"
+import { useGSAP } from '@gsap/react';
 
 function Hero() {
   const { homeRef, aboutRef, servicesRef, clientsRef, contactRef } = useScroll();
+
+  const imageRef = useRef<HTMLImageElement>(null)
+  const introRef = useRef<HTMLDivElement>(null)
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.intro',
+      {left: "-100%", autoAlpha: 0},
+      {left: 0, autoAlpha: 1, duration: 0.8, ease: "power2.out"
+      }
+    )
+
+        gsap.fromTo(
+      '.imgContainer',
+      {right: "-100%", autoAlpha: 0},
+      {right: 0, autoAlpha: 1, duration: 0.8, ease: "power2.out"
+      }
+    )
+  })
+
+  //   useGSAP(() => {
+  //   gsap.to(
+  //     '.intro',
+  //     {left: "0", opacity: "unset", duration: 0.5}
+  //   )
+
+  //   gsap.to(
+  //     '.imgContainer',
+  //     {left: "0", opacity: "unset", duration: 0.5}
+  //   )
+  // })
 
       const scrollTo = (
       ref: React.RefObject<HTMLElement | null>
@@ -48,8 +82,8 @@ function Hero() {
       
 
 
-      <div className={styles.intro}>
-        <p className={styles.redPTag}>ELITE COACHING</p>
+      <div className={`${styles.intro} intro  `}>
+        {/* <p className={styles.redPTag}>ELITE COACHING</p> */}
 
         <h1>
           ELEVATE YOUR <span>PERFORMANCE</span>
@@ -65,7 +99,7 @@ function Hero() {
         </div>
       </div>
 
-        <div className={styles.imgContainer}>
+        <div className={`${styles.imgContainer} imgContainer`}>
         <div className={styles.heroOverlay}></div>
         <img src="/assets/images/coaching-martin-2.JPG" />
       </div>

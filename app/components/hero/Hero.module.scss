@@ -5,6 +5,9 @@
     min-height:calc(100vh - 85.33px);
     // border: 1px solid red;
     overflow-y: hidden;
+    overflow-x: hidden;
+    overflow: hidden;
+
     position: relative;
     display: flex;
     align-items: center;
@@ -231,12 +234,14 @@
     .intro{
         z-index: 1000;
         // position: absolute;
+        position: relative;
 
         width: 672px;
         max-width: 100%;
         // min-height: 428px;
         // margin: 0 0 0 150px;
         // margin: 0 0 0 9.1%;
+
 
         h1, p{
             font-weight: 100;
@@ -250,17 +255,23 @@
         }
 
         h1{
+            position: relative;
             color: white;
             color: black;
             // font-size: 92px;
             margin: 25px 0;
             // font-size: 75px;
             // border: 1px solid red;
+            // text-shadow: 1px 1px black;
+            animation: bouncee 1.1s infinite ease-in-out;
+
         }
 
         span{
             color: red;
             color: #f9710b;
+            // font-weight: 700;
+
         }
 
 
@@ -271,6 +282,11 @@
             // border: 1px solid red;
         }
     }
+
+        @keyframes bouncee {
+  0%, 100% { top: 0; }
+  50%      { top: 10px; }
+}
 
 }
 
@@ -323,7 +339,7 @@
         }
 
         .intro{
-            position: unset;
+            // position: unset;
             margin: unset;
             width: 550px;
             max-width: 100%;

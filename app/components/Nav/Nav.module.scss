@@ -116,6 +116,7 @@
     
     ul{
         display: flex;
+        // display: none;
         width: 350px;
         // width: 500px;
         // width: 600px;
@@ -267,6 +268,7 @@
         //   }
 
         .headerUL{
+            display: none;
             flex-direction: column;
             height: 100vh;
             position: absolute;
