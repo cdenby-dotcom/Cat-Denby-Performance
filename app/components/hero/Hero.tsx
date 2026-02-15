@@ -8,6 +8,7 @@ import { PiMouseMiddleClickFill } from "react-icons/pi";
 import { FaCircleArrowDown } from "react-icons/fa6";
 import gsap from "gsap"
 import { useGSAP } from '@gsap/react';
+import { useEffect, useState } from "react";
 
 function Hero() {
   const { homeRef, aboutRef, servicesRef, clientsRef, contactRef } = useScroll();
@@ -15,17 +16,24 @@ function Hero() {
   const imageRef = useRef<HTMLImageElement>(null)
   const introRef = useRef<HTMLDivElement>(null)
 
+  useEffect(() => {
+  const id = requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+  });
+  return () => cancelAnimationFrame(id);
+}, []);
+
   useGSAP(() => {
     gsap.fromTo(
       '.intro',
-      {left: "-100%", autoAlpha: 0},
+      {autoAlpha: 0},
       {left: 0, autoAlpha: 1, duration: 0.8, ease: "power2.out"
       }
     )
 
         gsap.fromTo(
       '.imgContainer',
-      {right: "-100%", autoAlpha: 0},
+      {autoAlpha: 0},
       {right: 0, autoAlpha: 1, duration: 0.8, ease: "power2.out"
       }
     )

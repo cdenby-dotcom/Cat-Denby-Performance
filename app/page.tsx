@@ -23,6 +23,7 @@ export default function Home() {
 
   const [opacites, setOpacities] = useState([0,0,0,0])
 
+
   useGSAP(() => {
     gsap.fromTo(
       '.Header',
