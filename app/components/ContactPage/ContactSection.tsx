@@ -67,7 +67,7 @@ function ContactSection() {
                             </div>
                         </div>
 
-                        <p>For teams and individuals:</p>
+                        <p className={styles.secondTitleP}>For teams and individuals:</p>
 
                         <ul>
                             <li>Warm-up protocols</li>

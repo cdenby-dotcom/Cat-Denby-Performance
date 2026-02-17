@@ -228,6 +228,16 @@ margin: 0 0 25px 0;
                 align-items: center;
             }
 
+            .secondTitleP{
+                                //         border: 1px solid #d4d4d3;
+
+                                // background-color: #fff8f2;
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 10px;
+                                border-bottom: 1px solid #d4d4d3;
+            }
+
             .orange{
                 color: #f9710b;
             }
@@ -268,6 +278,7 @@ margin: 0 0 25px 0;
         // gap: 0 5px;
         //     border-radius: 7px;
         //     border: 1px solid #d4d4d3;
+        list-style-position: outside;
 
 
             }
@@ -289,6 +300,7 @@ margin: 0 0 25px 0;
         li::marker {
         color: red;
         color: #f9710b;
+        
         }
 
         .contact{
@@ -431,7 +443,7 @@ margin: 0 0 25px 0;
                         padding:60px 0;
                         
                         li{
-                            min-height: 74px;
+                            min-height: 45px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
