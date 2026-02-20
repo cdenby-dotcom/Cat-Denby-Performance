@@ -1,14 +1,8 @@
 .FooterNav{
     flex-direction: column;
-    // border: 1px solid red;
-    // padding: 0 20px;
 
         .copyright{
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         text-align: center;
-        // vertical-align: middle;
 
         svg{
             vertical-align: middle;
@@ -29,21 +23,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
-        
-
-        // border: 1px solid red;
-
-    //     background-color: black;
-    //     background-color: #100f0ffa;
-    //     position: sticky;
-    //     top: 0;
-    //     left: 0;
-    //     z-index: 10000;
-
-
-    // display: flex;
-    // justify-content: center;
-    // padding: 20px;
 
     .menu{
         display: none;
@@ -76,15 +55,6 @@
 
     }
 
-    // nav{
-    //     width: 1352px;
-    //     max-width: 100%;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     // border: 1px solid red;
-    // }
-
     button{
                 color: white;
                 color: black;
@@ -116,14 +86,10 @@
     
     ul{
         display: flex;
-        // display: none;
         width: 350px;
-        // width: 500px;
-        // width: 600px;
         max-width: 100%;
         justify-content: space-between;
         align-items: center;
-        // border: 1px solid red;
 
 
         list-style: none;
@@ -175,29 +141,11 @@
     .Nav{
                     flex-direction: column;
             position: relative;
-        // padding: 0;
-
-    //         .logo{
-    //     color: white;
-    //     color: black;
-    //     text-align: center;
-    //     letter-spacing: 4px;
-    //     text-decoration: none;
-    //     border: 1px solid red;
-
-    //     span{
-    //         font-size: 16px;
-    //         display: block;
-    //         color: black;
-    //     }
-    // }
 
         .menuContainer{
             width: 100%;
             display: flex;
             position: relative;
-            // justify-content: space-between;
-            // border: 1px solid red;
         }
         
         .menu {
@@ -209,13 +157,11 @@
             height: 80px;
             cursor: pointer;
             transition: all .5s ease-in-out;
-            /* border: 3px solid #fff; */
           }
           .burger {
             width: 30px;
             height: 4px;
             background: #000000;
-            // border: 1px solid #f9710b;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(255,101,47,.2);
             transition: all .5s ease-in-out;
@@ -226,7 +172,6 @@
                 width: 30px;
                 height: 4px;
                 background: #000000;
-                // border: 1px solid #f9710b;
                 border-radius: 5px;
                 box-shadow: 0 2px 5px rgba(255,101,47,.2);
                 transition: all .5s ease-in-out;
@@ -261,63 +206,31 @@
             
           }
 
-        //   nav{
-        //     flex-direction: column;
-        //     position: relative;
-        //     z-index: 200000;
-        //   }
-
         .headerUL{
             display: none;
             flex-direction: column;
             height: 100vh;
             position: absolute;
             top: 100%;
-            // bottom: 100%;
             left: 0;
 
-            // border: 1px solid red;
         }
-
-        // .footerUL{
-        //     z-index: 100;
-        // }
-
           ul{
-            // display: none;
             width: 100%;
-            // flex-direction: column;
-            // border: 1px solid red;
             text-align: center;
             background-color: rgb(252, 252, 252);
-            // border: 1px solid red;
 
-            :nth-child(2){
-                // border-top: 2px solid #4d4d4d;
-                // border-bottom: 2px solid #4d4d4d;
-            }
-            
-
-            // height: 100vh;
             justify-content: unset;
 
             li{
                 width: 100%;
             }
-
-            // .contactBtn{
-            //     border: red;
-            // }
             
 
             button{
                 width: 100%;
-                // border: 1px solid rgb(0, 255, 145);
                 padding: 20px 0;
                 
-
-
-                //
             }
           }
     }
@@ -331,7 +244,7 @@
 
         
             .logo{
-                // border: 1px solid red;
+
 
         span{
             font-size: 14px;

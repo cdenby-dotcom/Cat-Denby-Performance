@@ -22,11 +22,6 @@ function ContactSection() {
         <div className={styles.container}>
 
                         <div className={styles.card}>
-            {/* <div className={styles.card__gradient}>
-            </div> */}
-
-            {/* <div className={styles.circle1}></div>
-            <div className={styles.circle2}></div> */}
 
         </div>
 

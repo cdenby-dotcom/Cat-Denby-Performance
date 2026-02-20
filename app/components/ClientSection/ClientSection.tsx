@@ -119,7 +119,6 @@ function ClientSection() {
             </div>
           ))}
         </div></div>
-{/* style={{backgroundColor: "rgb(252, 252, 252)", width: "100%", padding: "0 200px", minHeight: "100vh"}} */}
 
         <div className={styles.container2} >
 
@@ -141,21 +140,6 @@ function ClientSection() {
             </div>
           ))}
         </div>
-
-
-        
-
-        {/* <div className={styles.clients2}>
-          {clients2.map((i) => (
-            <div className={styles.client}>
-              <div className={styles.gradientOverlay}></div>
-              <img src={i.image} />
-              <div className={styles.description}>
-                <p>{i.description}</p>
-              </div>
-            </div>
-          ))}
-        </div> */}
 
                 <div className={styles.clients}>
           {clients2.map((i, n) => (

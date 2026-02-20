@@ -1,13 +1,7 @@
 import React from 'react'
 import styles from "./Services.module.scss"
 import { RxPerson, RxLightningBolt, RxTimer, RxArrowRight } from "react-icons/rx";
-import { GiWeightLiftingUp } from "react-icons/gi";
-import { IoIosFitness } from "react-icons/io";
-import { IoMdFitness } from "react-icons/io";
-import { CgGym } from "react-icons/cg";
-import { MdOutlineFitnessCenter } from "react-icons/md";
-import { MdFitnessCenter } from "react-icons/md";
-import { IoFitnessOutline } from "react-icons/io5";
+
 
 import { useScroll } from '@/app/contexts/scrollContext';
 
@@ -37,7 +31,7 @@ function Services() {
     ) => {
       if (!ref.current) return;
   
-      // Get THIS header's height
+      // Get header's height
       const headerHeight =
         document.getElementById('Header')?.offsetHeight ?? 0;
   
