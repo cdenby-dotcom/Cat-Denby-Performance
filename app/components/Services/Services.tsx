@@ -51,8 +51,8 @@ function Services() {
     <div className={styles.Services} ref={servicesRef}>
 
       <div className={styles.intro}>
-        <p className={styles.red}>SERVICES</p>
-        <h2>BUILT FOR <span className={styles.red}>ATHLETES</span></h2>
+        <p className={styles.orange}>SERVICES</p>
+        <h2>BUILT FOR <span className={styles.orange}>ATHLETES</span></h2>
         <p>Not general fitness. Not weight loss programs. Performance coaching grounded in sports science for individuals with performance goals.</p>
       </div>
 

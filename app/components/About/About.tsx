@@ -21,10 +21,10 @@ function About(props: {opacity: number}) {
       <div className={styles.aboutOverlay}></div>
 
       <div className={styles.intro}>
-            <p className={`${styles.red} ${styles.title}`}>ABOUT ME</p>
+            <p className={`${styles.orange} ${styles.title}`}>ABOUT ME</p>
 
           <h2>
-            SCIENCE-DRIVEN <span className={styles.red}>PERFORMANCE</span>
+            SCIENCE-DRIVEN <span className={styles.orange}>PERFORMANCE</span>
           </h2>
       </div>
 

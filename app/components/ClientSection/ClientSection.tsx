@@ -88,11 +88,11 @@ function ClientSection() {
     <div className={styles.ClientSection} ref={clientsRef}>
       <div className={styles.container}>
         <div className={styles.intro}>
-          <p className={styles.red}>SUCCESS STORIES</p>
+          <p className={styles.orange}>SUCCESS STORIES</p>
 
-          <h2>ATHLETES I WORK WITH</h2>
+          <h2> <span className={styles.orange}>ATHLETES</span> I WORK WITH</h2>
 
-          <p>
+          <p >
             From competitive fighters to dedicated athetes, <span></span> real
             results from real training
           </p>
@@ -123,7 +123,7 @@ function ClientSection() {
         <div className={styles.container2} >
 
         <div className={styles.intro}>
-        <h2>IN THE <span className={styles.red}>TRENCHES</span></h2>
+        <h2>IN THE <span className={styles.orange}>TRENCHES</span></h2>
         </div>
 
         <div className={styles.clients}>
