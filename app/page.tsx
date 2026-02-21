@@ -5,7 +5,6 @@ import Nav from "./components/Nav/Nav";
 import About from "./components/About/About";
 import ClientSection from "./components/ClientSection/ClientSection";
 import ContactSection from "./components/ContactPage/ContactSection";
-import Footer from "./components/Footer/Footer";
 import { ScrollContext } from "./contexts/scrollContext";
 import { useEffect, useRef, useState } from "react";
 import { FaRegCopyright } from "react-icons/fa";
