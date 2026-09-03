@@ -93,7 +93,7 @@ function ClientSection() {
       <div className={styles.container}>
         <div className={styles.intro}>
           <p className={styles.orange}>SUCCESS STORIES</p>
-          <h2>Real results from real training</h2>
+          <h2>REAL RESULTS FROM REAL TRAINING</h2>
         </div>
       </div>
 
