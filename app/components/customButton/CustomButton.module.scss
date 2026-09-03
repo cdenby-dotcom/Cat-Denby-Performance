@@ -1,31 +1,25 @@
 .Btn {
-  font-family: 'Glacial Indifference', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 12px 28px;
-  border-radius: 6px;
-  cursor: pointer;
-  letter-spacing: 0.5px;
-  transition: 0.2s ease;
-}
-.Btn {
-  /* Kill Safari default blue button */
   appearance: none;
   -webkit-appearance: none;
 
-  /* Your brand styling */
   background-color: #f9710b !important;
   color: white !important;
   border: none !important;
 
   font-family: 'Glacial Indifference', sans-serif;
   font-size: 1rem;
-  padding: 12px 28px;
-  border-radius: 6px;
+  font-weight: 400;
   letter-spacing: 0.5px;
 
+  padding: 12px 28px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+
+  transition: background-color 0.2s ease, transform 0.15s ease, opacity 0.15s ease;
+
+  &:hover {
+    background-color: #ff8a2c !important;
+  }
 
   &:active {
     transform: scale(0.97);
