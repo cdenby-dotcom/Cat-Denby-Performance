@@ -55,18 +55,21 @@
       margin-top: 10px;
     }
 
-    .btns {
-      margin-top: 14px;
-      display: flex;
-      justify-content: center;
+  .btns {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
 
-      button {
-        font-family: 'Antonio', sans-serif; /* BUTTON TEXT IN ANTONIO */
-        font-size: 0.9rem; /* SMALLER BUTTON TEXT */
-        padding: 10px 22px; /* SMALLER BUTTON */
-        border-radius: 6px;
-      }
-    }
+  button {
+    font-family: 'Glacial Indifference', sans-serif; /* CLEAN FONT */
+    font-size: 1rem; /* NORMAL SIZE */
+    font-weight: 400;
+    padding: 12px 28px; /* NICER PROPORTIONS */
+    border-radius: 6px;
+    letter-spacing: 0.5px; /* SUBTLE POLISH */
+  }
+}
+
 }
 
 
