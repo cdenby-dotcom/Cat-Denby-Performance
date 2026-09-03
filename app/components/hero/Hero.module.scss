@@ -30,19 +30,20 @@
       color: #f9710b; /* ORANGE */
     }
 
-    h2 {
-      font-family: 'Antonio', sans-serif;
-      font-size: 2.8rem; /* MUCH LARGER */
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin: 0;
-      margin-top: 4px;
+   h2 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 3.4rem; /* BIGGER */
+  font-weight: 700;
+  letter-spacing: 0.5px; /* TIGHTER */
+  margin: 0;
+  margin-top: 4px;
 
-      /* WHITE TEXT WITH BLACK OUTLINE */
-      color: white;
-      -webkit-text-stroke: 1.2px black;
-      text-stroke: 1.2px black; /* fallback */
-    }
+  /* WHITE TEXT WITH BLACK OUTLINE */
+  color: white;
+  -webkit-text-stroke: 1.6px black;
+  text-stroke: 1.6px black;
+}
+
 
     p {
       font-family: 'Glacial Indifference', sans-serif;
