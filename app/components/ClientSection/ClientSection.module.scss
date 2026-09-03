@@ -9,20 +9,27 @@
   /* INTRO */
   .intro {
     text-align: center;
-    margin: 0;
+    margin-bottom: 40px;
+
+    .orange {
+      color: #f9710b;
+    }
+
+    h2 {
+      margin: 20px 0;
+      font-family: 'Antonio';
+      color: black;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.55;
+      color: #333;
+    }
   }
 
-  .orange {
-    color: #f9710b;
-  }
-
-  h2 {
-    margin: 25px 0;
-    color: black;
-    font-family: 'Antonio';
-  }
-
-  /* MAIN CONTAINER (for intro + testimonials) */
+  /* MAIN CONTAINER */
   .container {
     width: 1352px;
     max-width: 100%;
@@ -33,33 +40,14 @@
     gap: 40px;
   }
 
-  /* IN THE TRENCHES SECTION */
-  .container2 {
-    width: 1352px;
-    max-width: 100%;
-    margin: 40px auto 0 auto;
-    background: white;
-    padding: 40px 20px;
-    border-radius: 12px;
-    border: 1px solid #d4d4d3;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .intro {
-      margin: 10px 0 30px 0;
-    }
-  }
-
-  /* IMAGE GRIDS */
+  /* IMAGE GRID — FULL WIDTH, CLEAN */
   .clients {
     width: 1352px;
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    padding-bottom: 75px;
+    margin-bottom: 60px;
 
     .client {
       position: relative;
@@ -103,12 +91,13 @@
 
   /* TESTIMONIALS */
   .testimonials {
-    width: 100%;
+    width: 1352px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin: 50px 0;
+    margin: 40px 0 80px 0;
 
     .clientTestimony {
       width: 420px;
@@ -135,6 +124,7 @@
 
       .testimony {
         margin: 20px 0;
+        line-height: 1.55;
       }
 
       .clientDetail {
