@@ -98,60 +98,50 @@ function ClientSection() {
         </div>
       </div>
 
-      {/* ⭐ IN THE TRENCHES FIRST */}
-      <div className={styles.container2}>
-        <div className={styles.intro}>
-          <h2>IN THE <span className={styles.orange}>TRENCHES</span></h2>
-        </div>
-
-        <div className={styles.clients}>
-          {clients1.map((i, n) => (
-            <div key={n} className={styles.client}>
-              <div className={styles.gradientOverlay}></div>
-              <div className={styles.description}>
-                <p className={styles.title}>{i.sport}</p>
-                <h3>{i.name}</h3>
-                <p>{i.description}</p>
-              </div>
-              <img src={i.image} />
+      {/* ⭐ IMAGE GRID (no title) */}
+      <div className={styles.clients}>
+        {clients1.map((i, n) => (
+          <div key={n} className={styles.client}>
+            <img src={i.image} />
+            <div className={styles.description}>
+              <p className={styles.title}>{i.sport}</p>
+              <h3>{i.name}</h3>
+              <p>{i.description}</p>
             </div>
-          ))}
-        </div>
-
-        <div className={styles.clients}>
-          {clients2.map((i, n) => (
-            <div key={n} className={styles.client}>
-              <div className={styles.gradientOverlay}></div>
-              <img src={i.image} />
-              <div className={styles.description}>
-                <p>{i.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
-      {/* ⭐ TESTIMONIALS SECOND */}
-      <div className={styles.container}>
-        <div className={styles.testimonials}>
-          {testimonials.map((i, n) => (
-            <div key={n} className={styles.clientTestimony}>
-              <div className={styles.stars}>
-                <IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar />
-              </div>
+      <div className={styles.clients}>
+        {clients2.map((i, n) => (
+          <div key={n} className={styles.client}>
+            <img src={i.image} />
+            <div className={styles.description}>
+              <p>{i.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
-              <p className={`${styles.white} ${styles.testimony}`}>{i.testimony}</p>
+      {/* ⭐ TESTIMONIALS */}
+      <div className={styles.testimonials}>
+        {testimonials.map((i, n) => (
+          <div key={n} className={styles.clientTestimony}>
+            <div className={styles.stars}>
+              <IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar />
+            </div>
 
-              <div className={styles.clientDetail}>
-                <span className={styles.ClientInitial}>{i.initial}</span>
-                <div>
-                  <p className={styles.white}>{i.name}</p>
-                  <p>{i.occupation}</p>
-                </div>
+            <p className={styles.testimony}>{i.testimony}</p>
+
+            <div className={styles.clientDetail}>
+              <span className={styles.ClientInitial}>{i.initial}</span>
+              <div>
+                <p>{i.name}</p>
+                <p>{i.occupation}</p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
     </div>
