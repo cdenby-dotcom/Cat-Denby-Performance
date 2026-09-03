@@ -92,8 +92,7 @@ function ClientSection() {
       {/* INTRO */}
       <div className={styles.container}>
         <div className={styles.intro}>
-          <p className={styles.orange}>SUCCESS STORIES</p>
-          <h2><span className={styles.orange}>ATHLETES</span> I WORK WITH</h2>
+          <h2><span className={styles.orange}>SUCCESS STORIES</h2>
           <p> Real results from real training</p>
         </div>
       </div>
