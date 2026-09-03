@@ -6,6 +6,18 @@
   flex-direction: column;
   align-items: center;
 
+  /* GLOBAL FONT FIX FOR THIS SECTION */
+.ClientSection {
+  * {
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+
+  h2, h3 {
+    font-family: 'Antonio', sans-serif;
+  }
+}
+
+
   /* INTRO */
   .intro {
     text-align: center;
