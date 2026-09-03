@@ -5,112 +5,56 @@ import styles from "./About.module.scss"
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { useScroll } from '@/app/contexts/scrollContext';
 
+function About() {
 
-function About(props: {opacity: number}) {
-
-  const {aboutRef} = useScroll()
-
-  console.log(aboutRef)
-
-  const {opacity} = props
-  console.log(opacity)
-
+  const { aboutRef } = useScroll();
 
   return (
     <div className={styles.About} ref={aboutRef}>
       <div className={styles.aboutOverlay}></div>
 
       <div className={styles.intro}>
-            <p className={`${styles.orange} ${styles.title}`}>ABOUT ME</p>
+        <p className={`${styles.orange} ${styles.title}`}>ABOUT ME</p>
 
-          <h2>
-            SCIENCE-DRIVEN <span className={styles.orange}>PERFORMANCE</span>
-          </h2>
+        <h2>
+          SCIENCE-DRIVEN <span className={styles.orange}>PERFORMANCE</span>
+        </h2>
       </div>
 
+      <div className={styles.container}>
 
-        <div className={styles.container}>
+        <div className={styles.infoCard} style={{borderTopLeftRadius: "7px", borderBottomLeftRadius: "7px"}}>
+          <div className={`${styles.cornerGradient} ${styles.nonDesktopGradient}`}></div>
 
+          <p className={styles.centerP}>Hi I’m Cat!</p>
 
+          <p>
+            I’m a strength and conditioning coach with an MSc in Applied Sports Science and over a decade of hands‑on coaching experience. I’ve worked in professional sport, including the NBA, but most of my work now focuses on helping everyday people get stronger, healthier, and more confident in their training.
+          </p>
 
-          <div className={styles.infoCard} style={{borderTopLeftRadius: "7px", borderBottomLeftRadius: "7px"}}>
+          <p>
+            My approach is simple: use current sports science research, adapt it to real life, and make training enjoyable for all levels. From first‑timers to competitive athletes. Strength is for everyone, and I build programmes that support long‑term health, mobility, and performance.
+          </p>
 
-                      <div className={`${styles.cornerGradient} ${styles.nonDesktopGradient}`}></div>
+          <p>
+            I split my time between a martial arts academy and a private studio, offering 1‑1 coaching, consultancy, and S&C support across different training backgrounds.
+          </p>
+        </div>
 
+        <div className={`${styles.experience} ${styles.infoCard}`} style={{borderTopRightRadius: "7px", borderBottomRightRadius: "7px"}}>
+          <div className={styles.cornerGradient}></div>
 
-                <p className={styles.centerP}>Hi I’m Cat! </p>
-
-                <p>
-                    I’m a strength and conditioning coach with an MSc in Applied Sports Science and over a decade of hands‑on coaching experience. I’ve worked in professional sport, including the NBA, but most of my work now focuses on helping everyday people get stronger, healthier, and more confident in their training.
-
-                </p>
-                <p>
-                  My approach is simple: use current sports science research, adapt it to real life, and make training enjoyable for all levels. From first‑timers to competitive athletes. Strength is for everyone, and I build programmes that support long‑term health, mobility, and performance.
-                </p>
-                <p>
-                    I split my time between a martial arts academy and a private studio, offering 1‑1 coaching, consultancy, and S&C support across different training backgrounds.
-
-                </p>
-
-          </div>
-
-          
-
-          <div className={`${styles.experience} ${styles.infoCard}`} style={{borderTopRightRadius: "7px", borderBottomRightRadius: "7px"}}>
-
-                      <div className={styles.cornerGradient}></div>
-
-              <li>
-                <BsFillCheckCircleFill />
-                <span>Master's degree in Sports Science</span>
-              </li>
-              <li>
-                <BsFillCheckCircleFill />
-                <span>NBA strength & conditioning experience</span>
-              </li>
-              <li>
-                <BsFillCheckCircleFill />
-                <span>Evidence-based, periodized programming</span>
-              </li>
-              <li>
-                <BsFillCheckCircleFill />
-                <span>10+ years coaching elite athletes</span>
-              </li>
-              <li>
-                <BsFillCheckCircleFill />
-                <span>All levels welcome</span>
-              </li>
-              <li>
-                <BsFillCheckCircleFill />
-                <span>Remote and in-person options available</span>
-              </li>
-            </div>
-
-        {/* <img src="/assets/images/client-venus.jpg" className={styles.card}/> */}
-
+          <li><BsFillCheckCircleFill /><span>Master's degree in Sports Science</span></li>
+          <li><BsFillCheckCircleFill /><span>NBA strength & conditioning experience</span></li>
+          <li><BsFillCheckCircleFill /><span>Evidence-based, periodized programming</span></li>
+          <li><BsFillCheckCircleFill /><span>10+ years coaching elite athletes</span></li>
+          <li><BsFillCheckCircleFill /><span>All levels welcome</span></li>
+          <li><BsFillCheckCircleFill /><span>Remote and in-person options available</span></li>
+        </div>
 
       </div>
-
-              {/* <div className={styles.card}>
-
-          
-                  <div className={styles.imgContainer}>
-        <div className={styles.heroOverlay}></div>
-       <img src="/assets/images/client-venus.jpg"/>
-      </div>
-
-          <div className={styles.circle1}></div>
-          <div className={styles.circle2}></div>
-
-          <div className={styles.cardTitle}>
-            <h3>
-              S&C 
-            </h3>
-            <p>COACHING</p>
-          </div>
-        </div> */}
     </div>
   );
 }
 
-export default About
+export default About;
