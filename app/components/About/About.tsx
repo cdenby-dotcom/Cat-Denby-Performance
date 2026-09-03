@@ -41,20 +41,14 @@ function About(props: {opacity: number}) {
                 <p className={styles.centerP}>Hi I’m Cat and I’m a personal trainer.</p>
 
                 <p>
-                    I combine academic expertise and practical experience to deliver personal training for
-                    all levels that’s personalised and goal driven. I hold an MSc in Applied Sports Science  with a focus on Strength & Conditioning, have experience working in the NBA, with professional boxers and running a PT business for over 10 years.
+                    I’m a strength and conditioning coach with an MSc in Applied Sports Science and over a decade of hands‑on coaching experience. I’ve worked in professional sport, including the NBA, but most of my work now focuses on helping everyday people get stronger, healthier, and more confident in their training.
 
                 </p>
                 <p>
-                    My journey began as an athlete; from youth football and tennis to boxing and back to
-                    football. Now, I apply this lived experience, alongside current sports science, to support
-                    people across all levels of training, from elite athletes to people who have never
-                    stepped foot in a gym before. Whatever your level I aim to make training friendly, fun
-                    and science based. 
+                  My approach is simple: use current sports science research, adapt it to real life, and make training enjoyable for all levels. From first‑timers to competitive athletes. Strength is for everyone, and I build programmes that support long‑term health, mobility, and performance.
                 </p>
                 <p>
-                    I currently work in-house in a leading martial arts academy and offer 1-1 coaching,
-                    consultancy, and team training across a range of sports.
+                    I split my time between a martial arts academy and a private studio, offering 1‑1 coaching, consultancy, and S&C support across different training backgrounds.
 
                 </p>
 
