@@ -1,166 +1,121 @@
-import React from 'react'
-import styles from "./ContactSection.module.scss"
-import {CiMail, CiPhone, CiLocationOn, CiClock2,CiInstagram, CiMemoPad, CiMapPin  } from "react-icons/ci";
+import React from 'react';
+import styles from "./ContactSection.module.scss";
+import { CiMail, CiPhone, CiLocationOn, CiClock2, CiInstagram } from "react-icons/ci";
 import { useScroll } from '@/app/contexts/scrollContext';
-import { GrLocationPin } from "react-icons/gr";
-import { FaMapPin } from "react-icons/fa";
+
 function ContactSection() {
 
-     const {contactRef} = useScroll()
+  const { contactRef } = useScroll();
 
-const contactDetails = [
+  const contactDetails = [
     {
-        svg: <CiMail />,
-        method: "Email",
-        href: "mailto:hello@catherinedenbypersonaltraining.com",
-        contactDetail: "hello@catherinedenbypersonaltraining.com"
+      svg: <CiMail />,
+      label: "Email",
+      href: "mailto:hello@catherinedenbypersonaltraining.com",
+      value: "hello@catherinedenbypersonaltraining.com"
     },
-
     {
-        svg: <CiPhone />,
-        method: "Phone / Whatsapp",
-        href: "tel:+447415772785",
-        contactDetail: "(+44) 07415772785"
+      svg: <CiPhone />,
+      label: "Phone / WhatsApp",
+      href: "tel:+447415772785",
+      value: "(+44) 07415772785"
     },
-
-    // KO Combat Academy
     {
-        svg: <CiLocationOn />,
-        method: "Training Location",
-        href: "https://www.google.com/maps/place/ko+combat+academy/data=!4m2!3m1!1s0x48761d8b58a2a535:0x7e331ff9b1f562a2?sa=X&ved=1t:242&ictx=111",
-        externalLink: true,
-        contactDetail: "KO Combat Academy",
-        address: "188 Bancroft Road, London, E1 4ET"
+      svg: <CiLocationOn />,
+      label: "KO Combat Academy",
+      href: "https://www.google.com/maps/place/ko+combat+academy",
+      value: "188 Bancroft Road, London, E1 4ET",
+      external: true
     },
-
-    // N1 Gym
     {
-        svg: <CiLocationOn />,
-        method: "Training Location",
-        href: "https://www.google.com/maps/place/N1+gym+-+personal+training/@51.543311,-0.1048704,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b30ae7fb067:0x76f19a62bd396c39!8m2!3d51.543311!4d-0.1048704!16s%2Fg%2F11l28y6c_k?entry=ttu",
-        externalLink: true,
-        contactDetail: "N1 Gym",
-        address: "35a Cobble Ln, Islington, N1 1SF"
+      svg: <CiLocationOn />,
+      label: "N1 Gym",
+      href: "https://www.google.com/maps/place/N1+gym+-+personal+training",
+      value: "35a Cobble Ln, Islington, N1 1SF",
+      external: true
     },
-
-    // KO Availability (clean + separate)
     {
-        svg: <CiClock2 />,
-        method: "KO Combat Academy Hours",
-        contactDetail: "Mon-Fri: 8am–12pm"
+      svg: <CiClock2 />,
+      label: "KO Combat Academy Hours",
+      value: "Mon–Fri: 8am–12pm"
     },
-
-    // N1 Availability (clean + separate)
     {
-        svg: <CiClock2 />,
-        method: "N1 Gym Hours",
-        contactDetail: "Mon–Thu: 4–8pm, Fri: 2:30–6:30pm"
+      svg: <CiClock2 />,
+      label: "N1 Gym Hours",
+      value: "Mon–Thu: 4–8pm, Fri: 2:30–6:30pm"
     },
-
     {
-        svg: <CiInstagram />,
-        method: "Instagram",
-        href: "https://www.instagram.com/catd3nby/",
-        externalLink: true,
-        contactDetail: "@Catd3nby"
+      svg: <CiInstagram />,
+      label: "Instagram",
+      href: "https://www.instagram.com/catd3nby/",
+      value: "@Catd3nby",
+      external: true
     }
-];
-
+  ];
 
   return (
     <div className={styles.ContactSection} ref={contactRef}>
 
-
-        <div className={styles.container}>
-
-                        <div className={styles.card}>
-
-        </div>
-
+      {/* WHAT I OFFER */}
+      <div className={styles.container}>
         <div className={styles.intro}>
-                                <p className={styles.orange}>READY TO LEVEL UP?</p>
-
-                    {/* <h2>LET'S BUILD YOUR <span className={styles.red}>WINNING EDGE</span></h2> */}
-                    <h2>WHAT I <span className={styles.orange}>OFFER</span></h2>
+          <p className={styles.orange}>WHAT I OFFER</p>
+          <h2>Coaching & Consultancy</h2>
+          <p className={styles.subtext}>
+            Clear, simple formats designed to help you move better, feel stronger, and perform at your best.
+          </p>
         </div>
 
-        <div className={styles.subContainer}>
-                <div className={styles.offers}>
+        <div className={styles.textBlock}>
+          <h3>Coaching</h3>
+          <p>
+            55‑minute sessions delivered in‑person or online. Each session blends mobility, strength,
+            conditioning and technical work — tailored to your goals and training history.
+            Sessions take place at KO Combat Academy (Bethnal Green) or N1 Gym (Highbury), London.
+          </p>
+        </div>
 
-                    <div className={styles.offer} style={{paddingLeft: "20px", paddingRight: "20px"}}>
-                        <div className={styles.cornerGradient}></div>
-                        <div className={styles.title}>
-                            <p className={styles.logo}>1:1</p>
-                            <div>
-                                <h3>COACHING</h3>
-                                <p className={styles.orange}>In-person & online</p>
-                            </div>
-                        </div>
+        <div className={styles.textBlock}>
+          <h3>Consultancy</h3>
+          <p>
+            For individuals, teams and organisations. I provide warm‑up protocols, weekly structures,
+            periodisation plans, movement screening, program design and recovery strategies — all built
+            around your sport, schedule and performance needs.
+          </p>
+        </div>
 
-                        <p>55-minute session including mobility, strength, and conditioning work.</p>
+        {/* CONTACT */}
+        <div className={styles.contactIntro}>
+          <p className={styles.orange}>GET IN TOUCH</p>
+          <h2>Contact</h2>
+        </div>
 
-                        <p>Sessions are designed to be challenging, but also fun. They are tailored to you and your goals.</p>
+        <div className={styles.contactList}>
+          {contactDetails.map((item, index) => (
+            <div key={index} className={styles.contactItem}>
+              {item.svg}
+              <div>
+                <p className={styles.label}>{item.label}</p>
 
-                        <a className={styles.pLocationPinSVG} href="https://www.google.com/maps/place/ko+combat+academy/data=!4m2!3m1!1s0x48761d8b58a2a535:0x7e331ff9b1f562a2?sa=X&ved=1t:242&ictx=111" target="_blank" rel="noopener noreferrer"><FaMapPin  className={styles.locationPinSVG} /> KO gym, Bethnal Green, London</a>
-                    </div>
-
-                                        <div className={styles.offer}>
-                                            <div className={styles.cornerGradient}></div>
-                        <div className={styles.title}>
-                            <CiMemoPad  className={styles.logo}/>
-                            <div>
-                                <h3>CONSULTANCY</h3>
-                                <p className={styles.orange}>In-person & online</p>
-                            </div>
-                        </div>
-
-                        <p className={styles.secondTitleP}>For teams and individuals:</p>
-
-                        <ul>
-                            <li>Warm-up protocols</li>
-                            <li>Weekly structures & periodisation</li>
-                            <li>Movement screening & testing</li>
-                            <li>Program design</li>
-                            <li>Recovery strategies</li>
-                        </ul>
-                    </div>
-
-                    {/* <p>Whether you're preparing for competition or pushing to the next level, let's create a program built on sports science and tailored to your goals.</p>
-
-                    <ul>
-                        <li>55-minute session including mobility, strength, and conditioning work, designed to be challenging, but also fun. They are tailored to you and your
-goals.
-
-        </li>
-                        <li>Consultancy &#40;In-person and online&#41;
-        </li>
-                        <li>Regular check-ins and program adjustments
-        </li>
-                    </ul> */}
-                </div>
-
-                <div className={styles.contact}>
-                    {/* <h3>GET IN TOUCH</h3> */}
-
-                    {contactDetails.map((i, n) => 
-                        <div className={styles.details} key={n}>
-                            {i.svg}
-                            
-                            {/* <div> */}
-                                <p>{i.method}</p>
-
-                                <a className={styles.white} href={i.href} target={i.externalLink ? "_blank" : ""} rel={i.externalLink ? "noopener noreferrer" : ""}>{i.contactDetail}</a>
-
-                                {i.address ? <p>{i.address}</p> : false}
-                            {/* </div> */}
-                        </div>
-                    )}
-                </div>
-
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target={item.external ? "_blank" : ""}
+                    rel={item.external ? "noopener noreferrer" : ""}
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <p>{item.value}</p>
+                )}
+              </div>
             </div>
+          ))}
         </div>
+
+      </div>
     </div>
-  )
+  );
 }
 
-export default ContactSection
+export default ContactSection;
