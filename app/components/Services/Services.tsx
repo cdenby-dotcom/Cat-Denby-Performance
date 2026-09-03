@@ -1,92 +1,78 @@
 'use client';
 
-import React from 'react'
-import styles from "./Services.module.scss"
-import { RxPerson, RxLightningBolt, RxTimer, RxArrowRight } from "react-icons/rx";
-
-import { useScroll } from '@/app/contexts/scrollContext';
+import React from 'react';
+import styles from "./Services.module.scss";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+import { GiStrong } from "react-icons/gi"; // example icon
+import { FaDumbbell } from "react-icons/fa"; // example icon
 
 function Services() {
-
-  const { servicesRef, contactRef } = useScroll();
-
-  const offeredServices = [
-    {
-      logo: <RxPerson className={styles.logo} />,
-      sports: ["Weight-loss", "Strength", "Toning"],
-      title: "PERSONAL TRAINING",
-      description: "Personalised, friendly, fun 1-1 training with a focus on your goals. Get stronger, lose fat and gain muscle."
-    },
-    {
-      logo: <RxLightningBolt className={styles.logo} />,
-      sports: ["Boxing", "MMA", "Wrestling"],
-      title: "COMBAT SPORTS",
-      description: "Periodised strength programs designed for fighters. Optimize power output, conditioning, and weight management while peaking for competition."
-    },
-    {
-      logo: <RxTimer className={styles.logo} />,
-      sports: ["Runners", "Triathletes", "Cyclists"],
-      title: "ENDURANCE ATHLETES",
-      description: "Evidence-based training combining aerobic development with targeted strength work. Improve economy, reduce injury risk, and hit your race goals."
-    }
-  ];
-
-  const scrollTo = (ref: React.RefObject<HTMLElement | null>) => {
-    if (!ref.current) return;
-
-    const headerHeight =
-      document.getElementById('Header')?.offsetHeight ?? 0;
-
-    const elementTop =
-      ref.current.getBoundingClientRect().top + window.scrollY;
-
-    const scrollTo = elementTop - headerHeight;
-
-    // INSTANT jump — no smooth animation
-    window.scrollTo({
-      top: scrollTo,
-      behavior: 'auto',
-    });
-  };
-
   return (
-    <div className={styles.Services} ref={servicesRef}>
-      <div className={styles.intro}>
-        <p className={styles.orange}>SERVICES</p>
-        <h2>BUILT FOR <span className={styles.orange}>ATHLETES</span></h2>
-        <p>Not general fitness. Not weight loss programs. Performance coaching grounded in sports science for individuals with performance goals.</p>
-      </div>
-
+    <div className={styles.Services}>
       <div className={styles.container}>
-        {offeredServices.map((i, n) => (
-          <div key={n} className={styles.service}>
+
+        {/* HEADER */}
+        <div className={styles.header}>
+          <h1>SERVICES</h1>
+          <h2>BUILT FOR PERFORMANCE</h2>
+          <p>Science‑driven coaching tailored to your goals.</p>
+        </div>
+
+        {/* TWO CARDS */}
+        <div className={styles.cards}>
+
+          {/* PERSONAL TRAINING */}
+          <div className={styles.card}>
             <div className={styles.cornerGradient}></div>
 
-            {i.logo}
-
-            <div className={styles.sports}>
-              {i.sports.map((s, n) =>
-                n === 1 ? (
-                  <React.Fragment key={n}>
-                    <span className={styles.circles}></span>
-                    {s}
-                    <span className={styles.circles}></span>
-                  </React.Fragment>
-                ) : (
-                  s
-                )
-              )}
+            <div className={styles.logo}>
+              <FaDumbbell size={40} />
             </div>
 
-            <h3>{i.title}</h3>
+            <h3>PERSONAL TRAINING</h3>
 
-            <p>{i.description}</p>
+            <p>
+              Friendly, personalised 1‑1 coaching focused on strength, confidence,
+              movement quality and long‑term health.
+            </p>
 
-            <button onClick={() => scrollTo(contactRef)}>
-              Learn More <RxArrowRight />
-            </button>
+            <div className={styles.list}>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Strength & muscle gain</span></div>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Fat loss & toning</span></div>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Technique & movement coaching</span></div>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Beginner‑friendly</span></div>
+            </div>
+
+            <a className={styles.link}>Learn More →</a>
           </div>
-        ))}
+
+          {/* STRENGTH & CONDITIONING */}
+          <div className={styles.card}>
+            <div className={styles.cornerGradient}></div>
+
+            <div className={styles.logo}>
+              <GiStrong size={40} />
+            </div>
+
+            <h3>STRENGTH & CONDITIONING</h3>
+
+            <p>
+              Evidence‑based programming for athletes across combat sports,
+              endurance, and team sports. Build power, resilience and performance.
+            </p>
+
+            <div className={styles.list}>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Periodised strength plans</span></div>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Combat sports S&C</span></div>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Endurance athlete support</span></div>
+              <div><BsFillCheckCircleFill className={styles.tick} /><span>Competition peaking</span></div>
+            </div>
+
+            <a className={styles.link}>Learn More →</a>
+          </div>
+
+        </div>
+
       </div>
     </div>
   );
