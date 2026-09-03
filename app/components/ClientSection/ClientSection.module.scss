@@ -6,17 +6,18 @@
   flex-direction: column;
   align-items: center;
 
-  /* GLOBAL FONT FIX FOR THIS SECTION */
-.ClientSection {
-  * {
-    font-family: 'Glacial Indifference', sans-serif;
-  }
-
-  h2, h3 {
+  /* TYPOGRAPHY SYSTEM */
+  /* Headings use Antonio */
+  h1,
+  h2,
+  h3 {
     font-family: 'Antonio', sans-serif;
   }
-}
 
+  /* Everything else uses Glacial Indifference */
+  & :not(h1):not(h2):not(h3) {
+    font-family: 'Glacial Indifference', sans-serif;
+  }
 
   /* INTRO */
   .intro {
@@ -29,7 +30,6 @@
 
     h2 {
       margin: 20px 0;
-      font-family: 'Antonio';
       color: black;
     }
 
@@ -52,7 +52,7 @@
     gap: 40px;
   }
 
-  /* IMAGE GRID — FULL WIDTH, CLEAN */
+  /* IMAGE GRID */
   .clients {
     width: 1352px;
     max-width: 100%;
