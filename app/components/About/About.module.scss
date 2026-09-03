@@ -21,24 +21,22 @@
   width: 1352px;
   max-width: 100%;
   display: flex;
-  gap: 40px; /* tighter, matches Services */
+  gap: 40px; /* slightly tighter */
   margin: 0 auto;
   position: relative;
 }
 
 /* LEFT CARD — MAIN INFO */
 .infoCard {
-  flex: 1;
-  min-width: 520px;   /* matches Services cards */
-  max-width: 600px;   /* matches Services cards */
+  width: 60%;
   background: white;
-  padding: 50px 40px; /* matches Services cards */
+  padding: 50px 32px; /* tighter than 60px 40px */
   border-radius: 12px;
   border: 1px solid #d4d4d3;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   display: flex;
   flex-direction: column;
-  gap: 14px; /* reduced dead space */
+  gap: 14px; /* reduced */
   position: relative;
 
   h1 {
@@ -64,19 +62,17 @@
     font-size: 1rem;
     line-height: 1.55;
     color: #333;
-    margin: 8px 0; /* reduced spacing */
+    margin: 6px 0; /* much tighter */
   }
 
   p:last-of-type {
-    margin-bottom: 20px; /* reduced dead space */
+    margin-bottom: 16px; /* no big dead space */
   }
 }
 
 /* RIGHT SIDE — EXPERIENCE LIST */
 .experience {
-  flex: 1;
-  min-width: 520px;   /* aligns with left card */
-  max-width: 600px;   /* aligns with left card */
+  width: 40%;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -130,11 +126,14 @@
     gap: 40px;
   }
 
-  .infoCard,
-  .experience {
-    min-width: 100%;
-    max-width: 100%;
+  .infoCard {
+    width: 100%;
     padding: 40px 20px;
+  }
+
+  .experience {
+    width: 100%;
+    padding: 0;
   }
 
   .cornerGradient {
