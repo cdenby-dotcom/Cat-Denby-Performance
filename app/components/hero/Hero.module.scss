@@ -16,27 +16,32 @@
     gap: 40px;
   }
 
-  .intro {
-    max-width: 40%; /* matches old layout */
+.intro {
+    max-width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 8px; /* tighter spacing */
+    gap: 8px;
 
     h1 {
       font-family: 'Glacial Indifference', sans-serif;
-      font-size: 2rem; /* smaller, refined */
+      font-size: 2rem;
       font-weight: 400;
       margin: 0;
+      color: #f9710b; /* ORANGE */
     }
 
     h2 {
       font-family: 'Antonio', sans-serif;
-      font-size: 1.4rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-      color: #f9710b;
+      font-size: 2.8rem; /* MUCH LARGER */
+      font-weight: 700;
+      letter-spacing: 2px;
       margin: 0;
       margin-top: 4px;
+
+      /* WHITE TEXT WITH BLACK OUTLINE */
+      color: white;
+      -webkit-text-stroke: 1.2px black;
+      text-stroke: 1.2px black; /* fallback */
     }
 
     p {
@@ -44,7 +49,7 @@
       font-style: italic;
       font-size: 1rem;
       line-height: 1.4;
-      max-width: 360px; /* matches screenshot */
+      max-width: 360px;
       margin-top: 10px;
     }
 
@@ -53,7 +58,8 @@
       display: flex;
       gap: 12px;
     }
-  }
+}
+
 
   .imgContainer {
     position: relative;
