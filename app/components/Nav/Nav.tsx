@@ -106,7 +106,7 @@ function Nav(props: {header: boolean}) {
 
       {header ? false : (
         <p className={styles.copyright}>
-          <FaRegCopyright/> {new Date().getFullYear()} Catherine Derby Performance. All rights reserved.
+          <FaRegCopyright/> {new Date().getFullYear()} Catherine Denby Performance. All rights reserved.
         </p>
       )}
     </nav>
