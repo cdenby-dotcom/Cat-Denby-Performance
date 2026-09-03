@@ -1,4 +1,18 @@
-.Services {
+.ServicesSection {
+
+  /* HEADINGS — Antonio */
+  h1,
+  h2,
+  h3 {
+    font-family: 'Antonio', sans-serif;
+  }
+
+  /* EVERYTHING ELSE — Glacial Indifference */
+  & :not(h1):not(h2):not(h3) {
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+  .Services {
+  
   width: 100%;
   min-height: calc(100vh - 85px);
   padding: 80px 20px;
