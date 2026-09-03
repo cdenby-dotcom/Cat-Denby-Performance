@@ -43,18 +43,18 @@ const contactDetails = [
         address: "35a Cobble Ln, Islington, N1 1SF"
     },
 
-    // KO Hours (clean + separate)
+    // KO Availability (clean + separate)
     {
         svg: <CiClock2 />,
         method: "KO Combat Academy Hours",
-        contactDetail: "Mon 9–1, Tue 9–1, Wed 7–11, Thu 8–12, Fri 7–1"
+        contactDetail: "Mon-Tues: 9am–1pm, Wed: 7am–11am, Thu: 8am–12pm, Fri: 7am–1pm"
     },
 
-    // N1 Hours (clean + separate)
+    // N1 Availability (clean + separate)
     {
         svg: <CiClock2 />,
         method: "N1 Gym Hours",
-        contactDetail: "Mon–Thu 4–8, Fri 2:30–6:30"
+        contactDetail: "Mon–Thu: 4–8pm, Fri: 2:30–6:30pm"
     },
 
     {
