@@ -107,6 +107,15 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
   }
 }
+.tick {
+  color: white;
+  background: linear-gradient(135deg, #f9710b, #ff8a2c);
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
 
 /* CORNER GRADIENT */
 .cornerGradient {
