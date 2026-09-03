@@ -64,12 +64,17 @@
     color: #333;
     margin: 12px 0;
   }
+
+  /* ⭐ EXTRA SPACING BELOW LAST PARAGRAPH */
+  p:last-of-type {
+    margin-bottom: 32px;
+  }
 }
 
 /* RIGHT SIDE — EXPERIENCE LIST */
 .experience {
   width: 40%;
-  padding: 60px 20px;
+  padding: 40px 20px; /* ⭐ reduced from 60px */
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -143,3 +148,4 @@
     min-height: 58px;
   }
 }
+
