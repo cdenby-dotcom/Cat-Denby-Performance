@@ -1,55 +1,56 @@
+'use client';
+
 import React from 'react'
 import styles from "./Services.module.scss"
 import { RxPerson, RxLightningBolt, RxTimer, RxArrowRight } from "react-icons/rx";
-
 
 import { useScroll } from '@/app/contexts/scrollContext';
 
 function Services() {
 
-  const {servicesRef, contactRef} = useScroll()
+  const { servicesRef, contactRef } = useScroll();
 
-  const offeredServices = [{
-    logo: <RxPerson  className={styles.logo} />,
-    sports: ["Weight-loss", "Strength", "Toning"],
-    title: "PERSONAL TRAINING",
-    description:"Personalised, friendly, fun 1-1 training with a focus on your goals. Get stronger, lose fat and gain muscle."
-  },{
-    logo: <RxLightningBolt className={styles.logo} />,
-    sports: ["Boxing", "MMA", "Wrestling"],
-    title: "COMBAT SPORTS",
-    description:"Periodised strength programs designed for fighters. Optimize power output, conditioning, and weight management while peaking for competition."
-  }, {
-    logo: <RxTimer className={styles.logo}/>,
-    sports: ["Runners", "Triathletes", "Cyclists"],
-    title: "ENDURANCE ATHLETES",
-    description:"Evidence-based training combining aerobic development with targeted strength work. Improve economy, reduce injury risk, and hit your race goals."
-  }]
+  const offeredServices = [
+    {
+      logo: <RxPerson className={styles.logo} />,
+      sports: ["Weight-loss", "Strength", "Toning"],
+      title: "PERSONAL TRAINING",
+      description: "Personalised, friendly, fun 1-1 training with a focus on your goals. Get stronger, lose fat and gain muscle."
+    },
+    {
+      logo: <RxLightningBolt className={styles.logo} />,
+      sports: ["Boxing", "MMA", "Wrestling"],
+      title: "COMBAT SPORTS",
+      description: "Periodised strength programs designed for fighters. Optimize power output, conditioning, and weight management while peaking for competition."
+    },
+    {
+      logo: <RxTimer className={styles.logo} />,
+      sports: ["Runners", "Triathletes", "Cyclists"],
+      title: "ENDURANCE ATHLETES",
+      description: "Evidence-based training combining aerobic development with targeted strength work. Improve economy, reduce injury risk, and hit your race goals."
+    }
+  ];
 
-      const scrollTo = (
-      ref: React.RefObject<HTMLElement | null>
-    ) => {
-      if (!ref.current) return;
-  
-      // Get header's height
-      const headerHeight =
-        document.getElementById('Header')?.offsetHeight ?? 0;
-  
-      // Get section position relative to page
-      const elementTop =
-        ref.current.getBoundingClientRect().top + window.scrollY;
-  
-      // Subtract header height
-      const scrollTo = elementTop - headerHeight;
-  
-      window.scrollTo({
-        top: scrollTo,
-        behavior: 'smooth',
-      });
-    };
+  const scrollTo = (ref: React.RefObject<HTMLElement | null>) => {
+    if (!ref.current) return;
+
+    const headerHeight =
+      document.getElementById('Header')?.offsetHeight ?? 0;
+
+    const elementTop =
+      ref.current.getBoundingClientRect().top + window.scrollY;
+
+    const scrollTo = elementTop - headerHeight;
+
+    // INSTANT jump — no smooth animation
+    window.scrollTo({
+      top: scrollTo,
+      behavior: 'auto',
+    });
+  };
+
   return (
     <div className={styles.Services} ref={servicesRef}>
-
       <div className={styles.intro}>
         <p className={styles.orange}>SERVICES</p>
         <h2>BUILT FOR <span className={styles.orange}>ATHLETES</span></h2>
@@ -57,31 +58,38 @@ function Services() {
       </div>
 
       <div className={styles.container}>
+        {offeredServices.map((i, n) => (
+          <div key={n} className={styles.service}>
+            <div className={styles.cornerGradient}></div>
 
-        
+            {i.logo}
 
-        {offeredServices.map((i, n) => <div key={n} className={styles.service}>
-          <div className={styles.cornerGradient}></div>
-          {/* <div className={styles.cornerGradient} style={{left: "0"}}></div>
-          <div className={styles.cornerGradient} style={{bottom: "0", top: "unset"}}></div> */}
-          {/* <div className={styles.cornerGradient} style={{bottom: "0", top: "unset", left: "0"}}></div> */}
-          {i.logo}
+            <div className={styles.sports}>
+              {i.sports.map((s, n) =>
+                n === 1 ? (
+                  <React.Fragment key={n}>
+                    <span className={styles.circles}></span>
+                    {s}
+                    <span className={styles.circles}></span>
+                  </React.Fragment>
+                ) : (
+                  s
+                )
+              )}
+            </div>
 
-          <div className={styles.sports}>
-            {i.sports.map((s, n) => n === 1 ? <React.Fragment key={n}><span className={styles.circles}></span>{s}<span className={styles.circles}></span></React.Fragment> : s)}
+            <h3>{i.title}</h3>
+
+            <p>{i.description}</p>
+
+            <button onClick={() => scrollTo(contactRef)}>
+              Learn More <RxArrowRight />
+            </button>
           </div>
-
-          <h3>{i.title}</h3>
-
-          <p>{i.description}</p>
-
-
-          <button onClick={() => scrollTo(contactRef)} >Learn More <RxArrowRight /></button>
-
-        </div>)}
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;
