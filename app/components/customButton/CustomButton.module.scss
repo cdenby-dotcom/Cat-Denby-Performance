@@ -1,57 +1,10 @@
-.Btn{
-    // background-color: #D87D4A;
-    // color: white;
-    font-size: 17px;
-    font-weight:500;
-    max-width: 236px;
-    width: 100%;
-    // width: 220px;
-    height: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // border: 1.5px solid #A6A6A6;
-    // border: none;
-    
-    color: white;
-    text-decoration: none;
-
-    font-weight: bold;
-    cursor: pointer;
-
-    border-radius: 8px;
+.Btn {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
 }
-
-
-@media (max-width: 425px){
-
-    .Btn{
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 1240px){
-
-    .Btn{
-        max-width: unset;
-    }
-}
-
-
-@media (min-width: 769px){
-
-    .Btn{
-        // box-shadow: 5px 5px #000000;
-        transition: 0.2s ;
-
-        &:hover{
-            // box-shadow: unset;
-            // transition: 0.2s ;
-            scale: (1.05);
-        }
-
-        
-    }
-
-}
-
