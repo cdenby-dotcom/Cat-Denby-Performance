@@ -8,13 +8,58 @@ function ContactSection() {
 
      const {contactRef} = useScroll()
 
-    const contactDetails = [
-        {svg: <CiMail /> , method: "Email", href:"mailto:hello@catherinedenbypersonaltraining.com", contactDetail: "hello@catherinedenbypersonaltraining.com"},
-        {svg: <CiPhone/>, method: "Phone / Whatsapp", href:"tel:+447415772785", contactDetail: "(+44) 07415772785"},
-        {svg: <CiLocationOn/>, method: "Training Location", href:"https://www.google.com/maps/place/ko+combat+academy/data=!4m2!3m1!1s0x48761d8b58a2a535:0x7e331ff9b1f562a2?sa=X&ved=1t:242&ictx=111", externalLink:true, contactDetail: "KO Combat Academy", address: "188 Bancroft Road, London, E1 4ET"},
-        {svg: <CiClock2  />, method: "Available Hours" , contactDetail:"Monday - Saturday: 7am - 1pm" },
-        {svg: <CiInstagram/>, method: "Instagram", href:"https://www.instagram.com/catd3nby/", externalLink:true, contactDetail: "@Catd3nby"},
-    ]
+ const contactDetails = [
+    {
+        svg: <CiMail />,
+        method: "Email",
+        href: "mailto:hello@catherinedenbypersonaltraining.com",
+        contactDetail: "hello@catherinedenbypersonaltraining.com"
+    },
+
+    {
+        svg: <CiPhone />,
+        method: "Phone / Whatsapp",
+        href: "tel:+447415772785",
+        contactDetail: "(+44) 07415772785"
+    },
+
+    // KO Combat Academy
+    {
+        svg: <CiLocationOn />,
+        method: "Training Location",
+        href: "https://www.google.com/maps/place/ko+combat+academy/data=!4m2!3m1!1s0x48761d8b58a2a535:0x7e331ff9b1f562a2?sa=X&ved=1t:242&ictx=111",
+        externalLink: true,
+        contactDetail: "KO Combat Academy",
+        address: "188 Bancroft Road, London, E1 4ET"
+    },
+
+    // N1 Gym (new)
+    {
+        svg: <CiLocationOn />,
+        method: "Training Location",
+        href: "https://www.google.com/maps/place/N1+gym+-+personal+training/@51.543311,-0.1048704,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b30ae7fb067:0x76f19a62bd396c39!8m2!3d51.543311!4d-0.1048704!16s%2Fg%2F11l28y6c_k?entry=ttu",
+        externalLink: true,
+        contactDetail: "N1 Gym",
+        address: "35a Cobble Ln, Islington, N1 1SF"
+    },
+
+    // Updated hours
+    {
+        svg: <CiClock2 />,
+        method: "Available Hours",
+        contactDetail:
+            "KO Combat Academy: Mon 9–1, Tue 9–1, Wed 7–11, Thu 8–12, Fri 7–1 | N1 Gym: Mon–Thu 4–8, Fri 2:30–6:30"
+    },
+
+    {
+        svg: <CiInstagram />,
+        method: "Instagram",
+        href: "https://www.instagram.com/catd3nby/",
+        externalLink: true,
+        contactDetail: "@Catd3nby"
+    }
+];
+
   return (
     <div className={styles.ContactSection} ref={contactRef}>
 
