@@ -19,10 +19,7 @@ function ContactSection() {
           <div className={styles.section}>
             <p>
               55‑minute sessions delivered in‑person or online. Each session blends mobility, strength,
-              conditioning and technical work — tailored to your goals and training history.
-            </p>
-            <p>
-              Sessions take place at KO Combat Academy (Bethnal Green) or N1 Gym (Highbury), London.
+              conditioning and technical work, all tailored to your goals and training history. Sessions take place at KO Combat Academy (Bethnal Green) or N1 Gym (Highbury), London.
             </p>
           </div>
 
