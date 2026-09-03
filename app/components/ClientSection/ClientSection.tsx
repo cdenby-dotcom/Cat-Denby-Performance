@@ -94,7 +94,7 @@ function ClientSection() {
         <div className={styles.intro}>
           <p className={styles.orange}>SUCCESS STORIES</p>
           <h2><span className={styles.orange}>ATHLETES</span> I WORK WITH</h2>
-          <p>From competitive fighters to dedicated athletes — real results from real training</p>
+          <p> Real results from real training</p>
         </div>
       </div>
 
