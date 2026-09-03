@@ -1,22 +1,14 @@
 'use client';
 
-import React from 'react'
-import styles from "./Hero.module.scss"
+import React from 'react';
+import styles from "./Hero.module.scss";
 import CustomButton from '../customButton/CustomButton';
 import { useScroll } from '@/app/contexts/scrollContext';
 
 function Hero() {
-  const { homeRef, servicesRef, contactRef } = useScroll();
+  const { contactRef } = useScroll();
 
-  // Remove scroll-to-top animation
-  // Just ensure page loads normally
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const scrollTo = (
-    ref: React.RefObject<HTMLElement | null>
-  ) => {
+  const scrollTo = (ref: React.RefObject<HTMLElement | null>) => {
     if (!ref.current) return;
 
     const headerHeight =
@@ -29,43 +21,38 @@ function Hero() {
 
     window.scrollTo({
       top: scrollTo,
-      behavior: 'smooth',
+      behavior: 'auto',
     });
   };
 
   return (
-    <div className={styles.Hero} ref={homeRef}>
+    <div className={styles.Hero}>
       <div className={styles.container}>
 
         <div className={styles.intro}>
-          <h1>
-            ELEVATE YOUR <span>PERFORMANCE</span>
-          </h1>
+          <h1>Cat Denby MSc</h1>
+          <h2>PERSONAL TRAINING</h2>
 
           <p>
-            Friendly science based inclusive personal training individually tailored to you and your goals.
+            Science based inclusive personal training individually tailored to you and your goals.
           </p>
 
           <div className={styles.btns}>
             <CustomButton
               value="START TRAINING"
-              backgroundColor="#f9710b;"
+              backgroundColor="#f9710b"
               border="none"
               onClick={() => scrollTo(contactRef)}
-            />
-            <CustomButton
-              value="VIEW SERVICES"
-              backgroundColor="transparent"
-              color="black"
-              border="1px solid #A6A6A6"
-              onClick={() => scrollTo(servicesRef)}
             />
           </div>
         </div>
 
         <div className={styles.imgContainer}>
           <div className={styles.heroOverlay}></div>
-          <img src="/assets/images/coaching-martin-2.JPG" />
+          <img
+            src="/assets/images/coaching-martin-2.JPG"
+            alt="Personal training"
+          />
         </div>
 
       </div>
