@@ -9,12 +9,12 @@
   overflow: hidden;
 
   /* BACKGROUND IMAGE */
-  background-image: url('/your-image.jpg');
+  background-image: url('/your-image.jpg'); /* replace with your actual path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  /* subtle darkening for readability */
+  /* READABILITY GRADIENT */
   &::after {
     content: "";
     position: absolute;
@@ -39,8 +39,8 @@
       font-family: 'Glacial Indifference', sans-serif;
       font-size: 2rem;
       font-weight: 400;
-      color: #f9710b;
       margin: 0;
+      color: #f9710b;
     }
 
     h2 {
@@ -54,9 +54,4 @@
     }
 
     p {
-      font-family: 'Glacial Indifference', sans-serif;
-      font-style: italic;
-      font-size: 1rem;
-      line-height: 1.4;
-      max-width: 360px;
-      color: #
+      font-family: 'Glacial Indifference
