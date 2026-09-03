@@ -1,7 +1,7 @@
 .Hero{
     width: 100%;
     margin: 0 auto;
-    min-height:calc(100vh - 85.33px);
+    min-height: calc(100vh - 85.33px);
     overflow: hidden;
 
     position: relative;
@@ -9,31 +9,10 @@
     align-items: center;
     padding: 0 20px;
 
-//     .mouseSVG{
-//         width: 50px;
-//         height: 50px;
-//         color: #f9710b;
-//         // flex-shrink: 0;
-//         animation: bounce 1.1s infinite ease-in-out;
-//         cursor: pointer;
-
-//         position: absolute;
-//         bottom: 20px;
-//         left: 50%;
-
-//     }
-
-//     @keyframes bounce {
-//   0%, 100% { transform: translateY(0); }
-//   50%      { transform: translateY(5px); }
-// }
-
-
     .container{
         width: 1352px;
         max-width: 100%;
         display: flex;
-        justify-content: center;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
@@ -44,71 +23,62 @@
         width: 100%;
         border-radius: 20px;
     }
-    
 
+    /* FIXED — removed right:-100% */
     .imgContainer{
         position: relative;
-        right: -100%;
+        right: 0;
         max-width: 48%;
         flex-grow: 1;
         border-radius: 20px;
     }
 
-
     .heroOverlay {
-        
-  position: absolute;
-  width: 100%;
-  height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
 
-  background:
-    linear-gradient(
-      to right,
-      rgb(247, 247, 247, 0.1) 100%,
-      rgba(247, 247, 247, 0) 0%,
-      rgba(247, 247, 247, 0.1) 100%
-    ),
-    linear-gradient(
-      to top,
-      rgba(247, 247, 247, 0.1) 0%,
-      rgba(247, 247, 247, 0) 50%,
-      rgba(247, 247, 247, 0.1) 100%
-    );
-}
+        background:
+            linear-gradient(
+                to right,
+                rgb(247, 247, 247, 0.1) 100%,
+                rgba(247, 247, 247, 0) 0%,
+                rgba(247, 247, 247, 0.1) 100%
+            ),
+            linear-gradient(
+                to top,
+                rgba(247, 247, 247, 0.1) 0%,
+                rgba(247, 247, 247, 0) 50%,
+                rgba(247, 247, 247, 0.1) 100%
+            );
+    }
 
-
+    /* FIXED — removed left:-100% */
     .intro{
         z-index: 1000;
         position: relative;
-        left: -100%;
+        left: 0;
 
         width: 672px;
         max-width: 100%;
-
 
         h1, p{
             font-weight: 100;
         }
 
-
         .redPTag{
-            color: red;
             color: #f9710b;
         }
 
         h1{
             position: relative;
-            color: white;
             color: black;
             margin: 25px 0;
-            animation: bouncee 1.1s infinite ease-in-out;
         }
 
         span{
-            color: red;
             color: #f9710b;
         }
-
 
         .btns{
             margin: 25px 0;
@@ -116,18 +86,10 @@
             gap: 0 15px;
         }
     }
-
-        @keyframes bouncee {
-  0%, 100% { top: 0; }
-  50%      { top: 10px; }
-}
-
 }
 
 @media (max-width: 1240px){
-
     .Hero{
-
         .intro{
             width: 500px;
             max-width: 50%;
@@ -139,17 +101,11 @@
     }
 }
 
-
 @media (max-width: 900px){
-
     .Hero{
         display: flex;
         justify-content: center;
         text-align: center;
-
-                .mouseSVG{
-            display: none;
-        }
 
         .container{
             flex-direction: column;
@@ -161,27 +117,21 @@
             max-width: 100%;
             padding: 0 15px;
 
-
             .btns{
                 justify-content: center;
             }
         }
     }
-    
-
 }
 
 @media (max-width: 768px){
     .Hero{
-            height:calc(100vh - 80px);
-
+        height: calc(100vh - 80px);
     }
 }
 
 @media (max-width: 750px){
-
     .Hero{
-
         .imgContainer{
             max-width: unset;
         }
