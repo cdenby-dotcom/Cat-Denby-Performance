@@ -12,12 +12,12 @@ function ContactSection() {
       <div className={styles.container}>
 
         {/* BOX 1 — WHAT I OFFER */}
-        <div className={styles.box}>
+        <div className={styles.offerBox}>
           <p className={styles.orange}>WHAT I OFFER</p>
-          <h2>Coaching & Consultancy</h2>
+          <h2 className={styles.centeredTitle}>COACHING & CONSULTANCY</h2>
 
           <div className={styles.section}>
-            <h3>Coaching</h3>
+            <h3 className={styles.centeredSub}>COACHING</h3>
             <p>
               55‑minute sessions delivered in‑person or online. Each session blends mobility, strength,
               conditioning and technical work — tailored to your goals and training history.
@@ -28,7 +28,7 @@ function ContactSection() {
           </div>
 
           <div className={styles.section}>
-            <h3>Consultancy</h3>
+            <h3 className={styles.centeredSub}>CONSULTANCY</h3>
             <p>
               For individuals, teams and organisations. I provide warm‑up protocols, weekly structures,
               periodisation plans, movement screening, program design and recovery strategies — all built
@@ -37,10 +37,10 @@ function ContactSection() {
           </div>
         </div>
 
-        {/* BOX 2 — CONTACT */}
-        <div className={styles.box}>
+        {/* BOX 2 — CONTACT (original layout restored) */}
+        <div className={styles.contactBox}>
           <p className={styles.orange}>CONTACT</p>
-          <h2>Get In Touch</h2>
+          <h2 className={styles.centeredTitle}>GET IN TOUCH</h2>
 
           <div className={styles.contactList}>
 
@@ -76,9 +76,7 @@ function ContactSection() {
               <CiLocationOn />
               <div>
                 <p>KO Combat Academy</p>
-                <a href="https://www.google.com/maps/place/ko+combat+academy" target="_blank" rel="noopener noreferrer">
-                  188 Bancroft Road, London, E1 4ET
-                </a>
+                <p>188 Bancroft Road, London, E1 4ET</p>
               </div>
             </div>
 
@@ -86,9 +84,7 @@ function ContactSection() {
               <CiLocationOn />
               <div>
                 <p>N1 Gym</p>
-                <a href="https://www.google.com/maps/place/N1+gym+-+personal+training" target="_blank" rel="noopener noreferrer">
-                  35a Cobble Ln, Islington, N1 1SF
-                </a>
+                <p>35a Cobble Ln, Islington, N1 1SF</p>
               </div>
             </div>
 
