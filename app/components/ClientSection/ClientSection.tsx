@@ -92,12 +92,14 @@ function ClientSection() {
       {/* INTRO */}
       <div className={styles.container}>
         <div className={styles.intro}>
-          <h2><span className={styles.orange}>SUCCESS STORIES</h2>
-          <p> Real results from real training</p>
+          <h2 style={{ fontFamily: "Impact, sans-serif" }} className={styles.orange}>
+            SUCCESS STORIES
+          </h2>
+          <p>Real results from real training</p>
         </div>
       </div>
 
-      {/* ⭐ IMAGE GRID (no title) */}
+      {/* IMAGE GRID */}
       <div className={styles.clients}>
         {clients1.map((i, n) => (
           <div key={n} className={styles.client}>
@@ -122,7 +124,7 @@ function ClientSection() {
         ))}
       </div>
 
-      {/* ⭐ TESTIMONIALS */}
+      {/* TESTIMONIALS */}
       <div className={styles.testimonials}>
         {testimonials.map((i, n) => (
           <div key={n} className={styles.clientTestimony}>
