@@ -10,19 +10,26 @@
     width: 1352px;
     max-width: 100%;
     display: flex;
-    justify-content: center;   /* pulls text + image together */
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 20px;                 /* tighter spacing */
+    gap: 0; /* remove spacing so overlap feels natural */
+    position: relative; /* allows overlap */
   }
 
   .intro {
-    max-width: 35%;            /* tighter text block */
+    max-width: 38%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 8px;
+
+    /* OVERLAP MAGIC */
+    position: relative;
+    z-index: 2;
+    margin-right: -60px; /* pushes text INTO the image */
+    margin-top: 20px;    /* slight vertical offset for style */
 
     h1 {
       font-family: 'Glacial Indifference', sans-serif;
@@ -34,11 +41,10 @@
 
     h2 {
       font-family: 'Antonio', sans-serif;
-      font-size: 4rem;         /* bigger */
+      font-size: 4.4rem;        /* bigger */
       font-weight: 700;
-      letter-spacing: -1px;    /* tighter */
+      letter-spacing: -1px;     /* tighter */
       margin: 0;
-      margin-top: 0;           /* closer to h1 */
 
       color: white;
       -webkit-text-stroke: 1.6px black;
@@ -57,7 +63,7 @@
     .btns {
       margin-top: 18px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
 
       button {
         font-family: 'Glacial Indifference', sans-serif;
@@ -72,8 +78,9 @@
 
   .imgContainer {
     position: relative;
-    max-width: 60%;            /* bigger image */
+    max-width: 62%; /* bigger image */
     border-radius: 20px;
+    z-index: 1;
 
     img {
       width: 100%;
@@ -100,12 +107,16 @@
 
     .container {
       flex-direction: column;
-      gap: 30px; /* nicer spacing on mobile */
+      gap: 30px;
     }
 
     .intro {
       max-width: 100%;
       padding: 0 15px;
+      margin-right: 0; /* remove overlap on mobile */
+      margin-top: 0;
+      align-items: center;
+      text-align: center;
 
       .btns {
         justify-content: center;
