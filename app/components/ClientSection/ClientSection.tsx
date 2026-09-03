@@ -92,10 +92,8 @@ function ClientSection() {
       {/* INTRO */}
       <div className={styles.container}>
         <div className={styles.intro}>
-          <h2 style={{ fontFamily: "Impact, sans-serif" }} className={styles.orange}>
-            SUCCESS STORIES
-          </h2>
-          <p>Real results from real training</p>
+          <p className={styles.orange}>SUCCESS STORIES</p>
+          <h2>Real results from real training</h2>
         </div>
       </div>
 
