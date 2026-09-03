@@ -17,7 +17,6 @@ function ContactSection() {
           <h2 className={styles.centeredTitle}>COACHING & CONSULTANCY</h2>
 
           <div className={styles.section}>
-            <h3 className={styles.centeredSub}>COACHING</h3>
             <p>
               55‑minute sessions delivered in‑person or online. Each session blends mobility, strength,
               conditioning and technical work — tailored to your goals and training history.
@@ -28,7 +27,6 @@ function ContactSection() {
           </div>
 
           <div className={styles.section}>
-            <h3 className={styles.centeredSub}>CONSULTANCY</h3>
             <p>
               For individuals, teams and organisations. I provide warm‑up protocols, weekly structures,
               periodisation plans, movement screening, program design and recovery strategies — all built
