@@ -8,7 +8,7 @@ function ContactSection() {
 
      const {contactRef} = useScroll()
 
- const contactDetails = [
+const contactDetails = [
     {
         svg: <CiMail />,
         method: "Email",
@@ -33,7 +33,7 @@ function ContactSection() {
         address: "188 Bancroft Road, London, E1 4ET"
     },
 
-    // N1 Gym (new)
+    // N1 Gym
     {
         svg: <CiLocationOn />,
         method: "Training Location",
@@ -43,12 +43,18 @@ function ContactSection() {
         address: "35a Cobble Ln, Islington, N1 1SF"
     },
 
-    // Updated hours
+    // KO Hours (clean + separate)
     {
         svg: <CiClock2 />,
-        method: "Available Hours",
-        contactDetail:
-            "KO Combat Academy: Mon 9–1, Tue 9–1, Wed 7–11, Thu 8–12, Fri 7–1 | N1 Gym: Mon–Thu 4–8, Fri 2:30–6:30"
+        method: "KO Combat Academy Hours",
+        contactDetail: "Mon 9–1, Tue 9–1, Wed 7–11, Thu 8–12, Fri 7–1"
+    },
+
+    // N1 Hours (clean + separate)
+    {
+        svg: <CiClock2 />,
+        method: "N1 Gym Hours",
+        contactDetail: "Mon–Thu 4–8, Fri 2:30–6:30"
     },
 
     {
@@ -59,6 +65,7 @@ function ContactSection() {
         contactDetail: "@Catd3nby"
     }
 ];
+
 
   return (
     <div className={styles.ContactSection} ref={contactRef}>
