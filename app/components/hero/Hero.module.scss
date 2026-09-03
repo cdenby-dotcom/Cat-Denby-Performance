@@ -10,18 +10,18 @@
     width: 1352px;
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;   /* pulls text + image together */
     align-items: center;
     margin: 0 auto;
-    gap: 40px;
+    gap: 20px;                 /* tighter spacing */
   }
 
-.intro {
-    max-width: 40%;
+  .intro {
+    max-width: 35%;            /* tighter text block */
     display: flex;
     flex-direction: column;
-    align-items: center; /* CENTER TEXT */
-    text-align: center;  /* CENTER TEXT */
+    align-items: center;
+    text-align: center;
     gap: 8px;
 
     h1 {
@@ -29,18 +29,17 @@
       font-size: 2rem;
       font-weight: 400;
       margin: 0;
-      color: #f9710b; /* ORANGE */
+      color: #f9710b;
     }
 
     h2 {
       font-family: 'Antonio', sans-serif;
-      font-size: 3.4rem; /* BIGGER */
+      font-size: 4rem;         /* bigger */
       font-weight: 700;
-      letter-spacing: 0.5px; /* TIGHTER */
+      letter-spacing: -1px;    /* tighter */
       margin: 0;
-      margin-top: 4px;
+      margin-top: 0;           /* closer to h1 */
 
-      /* WHITE TEXT WITH BLACK OUTLINE */
       color: white;
       -webkit-text-stroke: 1.6px black;
       text-stroke: 1.6px black;
@@ -55,28 +54,25 @@
       margin-top: 10px;
     }
 
-  .btns {
-  margin-top: 18px;
-  display: flex;
-  justify-content: center;
+    .btns {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
 
-  button {
-    font-family: 'Glacial Indifference', sans-serif; /* CLEAN FONT */
-    font-size: 1rem; /* NORMAL SIZE */
-    font-weight: 400;
-    padding: 12px 28px; /* NICER PROPORTIONS */
-    border-radius: 6px;
-    letter-spacing: 0.5px; /* SUBTLE POLISH */
+      button {
+        font-family: 'Glacial Indifference', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 12px 28px;
+        border-radius: 6px;
+        letter-spacing: 0.5px;
+      }
+    }
   }
-}
-
-}
-
-
 
   .imgContainer {
     position: relative;
-    max-width: 50%;
+    max-width: 60%;            /* bigger image */
     border-radius: 20px;
 
     img {
@@ -104,6 +100,7 @@
 
     .container {
       flex-direction: column;
+      gap: 30px; /* nicer spacing on mobile */
     }
 
     .intro {
