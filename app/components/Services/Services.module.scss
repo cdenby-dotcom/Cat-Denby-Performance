@@ -49,14 +49,14 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-wrap: nowrap; /* ⭐ forces side-by-side */
+  flex-wrap: nowrap; /* forces side-by-side */
 }
 
 /* CARD */
 .card {
   flex: 1;
+  min-width: 520px; /* ensures they fit side-by-side */
   max-width: 600px;
-  min-width: 520px; /* ⭐ ensures they fit side-by-side */
   background: white;
   padding: 50px 40px;
   border-radius: 12px;
@@ -149,7 +149,7 @@
 /* MOBILE */
 @media (max-width: 900px) {
   .cards {
-    flex-wrap: wrap; /* ⭐ stack on mobile */
+    flex-wrap: wrap; /* stack on mobile */
     gap: 30px;
   }
 
