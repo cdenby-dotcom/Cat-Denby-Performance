@@ -38,7 +38,7 @@ function About(props: {opacity: number}) {
                       <div className={`${styles.cornerGradient} ${styles.nonDesktopGradient}`}></div>
 
 
-                <p className={styles.centerP}>Hi I’m Cat and I’m a personal trainer.</p>
+                <p className={styles.centerP}>Hi I’m Cat! </p>
 
                 <p>
                     I’m a strength and conditioning coach with an MSc in Applied Sports Science and over a decade of hands‑on coaching experience. I’ve worked in professional sport, including the NBA, but most of my work now focuses on helping everyday people get stronger, healthier, and more confident in their training.
