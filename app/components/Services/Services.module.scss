@@ -11,164 +11,158 @@
   & :not(h1):not(h2):not(h3) {
     font-family: 'Glacial Indifference', sans-serif;
   }
-  .Services {
+
+  /* EVERYTHING BELOW MUST BE INSIDE THIS BLOCK */
   
-  width: 100%;
-  min-height: calc(100vh - 85px);
-  padding: 80px 20px;
-  background: #ecf0f3;
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  width: 1352px;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  margin: 0 auto;
-}
-
-/* HEADER */
-.header {
-  text-align: center;
-
-  h1 {
-    font-family: 'Glacial Indifference';
-    font-size: 1.4rem;
-    color: #f9710b;
-    margin: 0;
-    letter-spacing: 1px;
-  }
-
-  h2 {
-    font-family: 'Antonio';
-    font-size: 3.6rem;
-    margin: 10px 0;
-    letter-spacing: -1px;
-    color: black;
-  }
-
-  p {
-    font-family: 'Glacial Indifference';
-    font-size: 1rem;
-    color: #333;
-    margin-top: 10px;
-  }
-}
-
-/* TWO CARD LAYOUT */
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: nowrap; /* force side-by-side */
-}
-
-/* CARD */
-.card {
-  width: 50%;              /* ⭐ stable, predictable */
-  max-width: 600px;        /* matches About aesthetic */
-  background: white;
-  padding: 50px 40px;
-  border-radius: 12px;
-  border: 1px solid #d4d4d3;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: relative;
-  text-align: left;
-
-  /* CORNER GRAPHIC */
-  .cornerGradient {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 12px;
-    background: linear-gradient(
-      to bottom left,
-      rgba(249, 114, 11, 0.09),
-      rgba(249, 113, 11, 0)
-    );
-  }
-
-  /* LOGO CIRCLE */
-  .logo {
-    width: 60px;
-    height: 60px;
-    background-color: #fcefe6;
-    color: #f9710b;
-    border-radius: 50%;
-    padding: 4px;
+  .Services {
+    width: 100%;
+    min-height: calc(100vh - 85px);
+    padding: 80px 20px;
+    background: #ecf0f3;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
 
-  h3 {
-    font-family: 'Antonio';
-    font-size: 2.2rem;
-    margin: 0;
-    color: #f9710b;
-  }
-
-  p {
-    font-family: 'Glacial Indifference';
-    font-size: 1rem;
-    line-height: 1.55;
-    color: #333;
-  }
-}
-
-/* BULLET LIST */
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-  div {
+  .container {
+    width: 1352px;
+    max-width: 100%;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'Glacial Indifference';
-    font-size: 0.95rem;
+    flex-direction: column;
+    gap: 60px;
+    margin: 0 auto;
   }
-}
 
-/* TINY GRADIENT TICK */
-.tick {
-  color: white;
-  background: linear-gradient(135deg, #f9710b, #ff8a2c);
-  width: 14px;
-  height: 14px;
-  padding: 2px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
+  .header {
+    text-align: center;
 
-/* LINK */
-.link {
-  font-family: 'Glacial Indifference';
-  font-size: 1rem;
-  color: #f9710b;
-  cursor: pointer;
-  margin-top: 10px;
-}
+    h1 {
+      font-family: 'Glacial Indifference';
+      font-size: 1.4rem;
+      color: #f9710b;
+      margin: 0;
+      letter-spacing: 1px;
+    }
 
-/* MOBILE */
-@media (max-width: 900px) {
+    h2 {
+      font-family: 'Antonio';
+      font-size: 3.6rem;
+      margin: 10px 0;
+      letter-spacing: -1px;
+      color: black;
+    }
+
+    p {
+      font-family: 'Glacial Indifference';
+      font-size: 1rem;
+      color: #333;
+      margin-top: 10px;
+    }
+  }
+
   .cards {
-    flex-wrap: wrap; /* stack on mobile */
-    gap: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
   }
 
   .card {
-    width: 100%;     /* full width on mobile */
-    max-width: 100%;
-    padding: 40px 20px;
+    width: 50%;
+    max-width: 600px;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    border: 1px solid #d4d4d3;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    text-align: left;
+
+    .cornerGradient {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      background: linear-gradient(
+        to bottom left,
+        rgba(249, 114, 11, 0.09),
+        rgba(249, 113, 11, 0)
+      );
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      background-color: #fcefe6;
+      color: #f9710b;
+      border-radius: 50%;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h3 {
+      font-family: 'Antonio';
+      font-size: 2.2rem;
+      margin: 0;
+      color: #f9710b;
+    }
+
+    p {
+      font-family: 'Glacial Indifference';
+      font-size: 1rem;
+      line-height: 1.55;
+      color: #333;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Glacial Indifference';
+      font-size: 0.95rem;
+    }
+  }
+
+  .tick {
+    color: white;
+    background: linear-gradient(135deg, #f9710b, #ff8a2c);
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .link {
+    font-family: 'Glacial Indifference';
+    font-size: 1rem;
+    color: #f9710b;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .cards {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 100%;
+      padding: 40px 20px;
+    }
   }
 }
