@@ -21,22 +21,24 @@
   width: 1352px;
   max-width: 100%;
   display: flex;
-  gap: 60px;
+  gap: 40px; /* tighter, matches Services */
   margin: 0 auto;
   position: relative;
 }
 
 /* LEFT CARD — MAIN INFO */
 .infoCard {
-  width: 60%;
+  flex: 1;
+  min-width: 520px;   /* matches Services cards */
+  max-width: 600px;   /* matches Services cards */
   background: white;
-  padding: 60px 40px;
+  padding: 50px 40px; /* matches Services cards */
   border-radius: 12px;
   border: 1px solid #d4d4d3;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px; /* reduced dead space */
   position: relative;
 
   h1 {
@@ -49,7 +51,7 @@
   }
 
   h2 {
-    font-family: 'Antonio', sans-serif; /* override */
+    font-family: 'Antonio', sans-serif;
     font-size: 3.6rem;
     font-weight: 700;
     margin: 0 0 10px 0;
@@ -62,19 +64,20 @@
     font-size: 1rem;
     line-height: 1.55;
     color: #333;
-    margin: 12px 0;
+    margin: 8px 0; /* reduced spacing */
   }
 
-  /* ⭐ EXTRA SPACING BELOW LAST PARAGRAPH */
   p:last-of-type {
-    margin-bottom: 32px;
+    margin-bottom: 20px; /* reduced dead space */
   }
 }
 
 /* RIGHT SIDE — EXPERIENCE LIST */
 .experience {
-  width: 40%;
-  padding: 40px 20px; /* ⭐ reduced from 60px */
+  flex: 1;
+  min-width: 520px;   /* aligns with left card */
+  max-width: 600px;   /* aligns with left card */
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -127,14 +130,11 @@
     gap: 40px;
   }
 
-  .infoCard {
-    width: 100%;
-    padding: 50px 20px;
-  }
-
+  .infoCard,
   .experience {
-    width: 100%;
-    padding: 0;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 40px 20px;
   }
 
   .cornerGradient {
@@ -142,10 +142,3 @@
     height: 80px;
   }
 }
-
-@media (max-width: 450px) {
-  .infoCard li {
-    min-height: 58px;
-  }
-}
-
