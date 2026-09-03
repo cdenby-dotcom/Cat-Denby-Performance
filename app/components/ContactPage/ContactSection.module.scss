@@ -1,323 +1,105 @@
-.ContactSection{
-    width: 100%;
-    min-height:calc(100vh - 85.33px);
+.ContactSection {
+  width: 100%;
+  padding: 80px 20px;
+  background: #ecf0f3;
+  display: flex;
+  justify-content: center;
+
+  /* TYPOGRAPHY */
+  h1, h2, h3 {
+    font-family: 'Antonio', sans-serif;
+  }
+
+  & :not(h1):not(h2):not(h3) {
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+
+  .container {
+    width: 1352px;
+    max-width: 100%;
     display: flex;
-    align-items: center;
-    position: relative;
-    padding: 0 20px;
-    padding: 40px 20px;
-
-
-          background-color: hsl(30 40% 95%);
-  background-color: #ecf0f3;
-
-
-.container{
-    position: relative;
-    width: 100%;
-    min-height: 681px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-}
+    gap: 40px;
+  }
 
-.intro{
+  .intro {
     text-align: center;
-    margin: 20px 0 50px 0;
-}
 
-        .orange{
-            color: red;
-            color: #f9720be6;
-        }
+    .orange {
+      color: #f9710b;
+      letter-spacing: 1px;
+    }
 
-        h2{
-            margin: 35px 0 0 0;
-            color: black;
-        }
+    h2 {
+      font-size: 3rem;
+      margin: 10px 0;
+    }
 
-        h3{
-                font-size: 24px;
-            }
-    
-    .subContainer{
-        width: 1352px;
-        width: 1000px;
-        max-width: 100%;
-        margin: 0 auto;
-        position: relative;
-        justify-content: space-between;
-        gap: 20px;
-        z-index: 22;
+    .subtext {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #333;
+      line-height: 1.55;
+    }
+  }
 
-        .offers{
-            display: flex;
-            justify-content: space-between;
+  .textBlock {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #d4d4d3;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 
-            width: 100%;
-            max-width: 100%;
-            flex-wrap: wrap;
-        }
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
 
-        .pLocationPinSVG{
-            gap: 0 3px;
-            border-top: 1px solid #d4d4d3;
-            padding: 15px 0 0 0;
-            color: #f9710b;
-            text-decoration: none;
-            
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+  }
 
-            svg{
-                color: #f9710b;
-            width: 20px;
-            height: 20px;
-            }
-        }
+  .contactIntro {
+    text-align: center;
 
+    .orange {
+      color: #f9710b;
+    }
 
-                .cornerGradient {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;   // w-24
-  height: 100px;  // h-24
-  border-radius: 7px;
-//   border: 1px solid red;
+    h2 {
+      font-size: 3rem;
+      margin-top: 10px;
+    }
+  }
 
-  background: linear-gradient(
-    to bottom left,
-    rgba(249, 114, 11, 0.09),
-    rgba(249, 113, 11, 0.0)
-  );
-}
+  .contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
 
+    .contactItem {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
 
-        .offer{
-            margin: 0 0 25px 0;
-            min-width: 345px;
-            width: 48.5%;
-            min-height: 380px;
-            position: relative;
-            max-width: 100%;
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            gap: 30px 20px;
-            background-color: white;
-            border: 1px solid #d4d4d3;
-            border-radius: 10px;
-            padding: 20px;
-            line-height: 25px;
-
-
-            .title{
-                width: 100%;
-                display: flex;
-                gap: 5px;
-                align-items: center;
-                flex-direction: column;
-            }
-            
-
-            .logo{
-                color: red;
-                background-color: #ec13131A;
-                background-color: #fcefe6;
-                color: #f9710b;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                padding: 7px;
-                flex-shrink: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .secondTitleP{
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 10px;
-                                border-bottom: 1px solid #d4d4d3;
-            }
-
-            .orange{
-                color: #f9710b;
-            }
-
-            ul{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                gap: 0 20px;
-                margin: 0 0 0 1.9%;
-                width: 100%;
-                width: 85%;
-                margin: 0 auto;
-                text-align: start;
-                text-align: center;
-
-            }
-
-            li{
-                width: 100%;
-                margin: 5px 0;
-                        border-radius: 7px;
-                        text-align: start;
-        padding: 10px;
-        list-style-position: outside;
-
-
-            }
-        }
-
-
-        ul{
-            margin: 20px 0 0 1.9%;
-        }
-        
-
-        li{
-            list-style-position: inside;
-            margin: 15px 0;
-            font-size: 17px;
-        }
-
-        li::marker {
-        color: red;
+      svg {
+        width: 28px;
+        height: 28px;
         color: #f9710b;
-        
-        }
+      }
 
-        .contact{
-            width: 644px;
-            min-height: 500px;
-            min-height: 300px;
-            width: 100%;
-            background-color: white;
+      .label {
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
 
-
-            display: flex;
-            flex-wrap: wrap;
-             border: 1px solid #d4d4d3;
-            padding: 20px;
-            border-radius: 10px;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-            
-
-            .details{
-                display: flex;
-                text-align: center;
-                align-items: center;
-                justify-content: space-around;
-                min-height: 110px;
-                gap: 5px;
-                flex-direction: column;
-                min-width: 45%;
-
-
-                
-            }
-
-            svg{
-                color: red;
-                background-color: #ec13131A;
-                background-color: #fcefe6;
-                color: #f9710b;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                padding: 5px;
-                flex-shrink: 0;
-            }
-
-            
-
-            .white{
-                color: white;
-                color: #f9710b;
-                display: block;
-                word-break: break-word;
-                text-decoration: none;
-            }
-        }
-
-
-
-
+      a, p {
+        color: #333;
+        line-height: 1.4;
+      }
     }
-}
-
-@media (max-width: 1050px){
-    .ContactSection{
-
-        .subContainer{
-            flex-direction: column;
-
-
-            .intro{
-                width: 100%;
-            }
-            
-        
-
-            .contact{
-                width: 100%;
-                
-            }
-        }
-    }
-}
-
-@media (max-width: 768px){
-    .ContactSection{
-        // margin: 75px 0;
-            min-height: calc(100vh - 80px);
-
-            .contact{
-                p{
-                    font-size: 15px;
-                }
-            }
-
-            .subContainer{
-
-                .offers{
-
-                    .offer{
-                        width: 100%;
-                        min-width: unset;
-                    }
-                }
-            }
-
-    }
-}
-
-@media (max-width: 480px){
-    .ContactSection{
-
-
-            .subContainer{
-
-                .offers{
-
-                    .offer{
-                        padding:60px 0;
-                        
-                        li{
-                            min-height: 45px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-
-    }
+  }
 }
