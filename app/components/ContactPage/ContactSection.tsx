@@ -47,7 +47,7 @@ const contactDetails = [
     {
         svg: <CiClock2 />,
         method: "KO Combat Academy Hours",
-        contactDetail: "Mon-Tues: 9am–1pm, Wed: 7am–11am, Thu: 8am–12pm, Fri: 7am–1pm"
+        contactDetail: "Mon-Fri 9am–1pm"
     },
 
     // N1 Availability (clean + separate)
