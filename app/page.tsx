@@ -8,6 +8,7 @@ import ContactSection from "./components/ContactPage/ContactSection";
 import { ScrollContext } from "./contexts/scrollContext";
 import { useRef } from "react";
 import Services from "./components/Services/Services";
+import InTheTrenches from "./components/InTheTrenches/InTheTrenches"; // ⭐ added
 
 export default function Home() {
 
@@ -30,7 +31,11 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+
+        {/* ⭐ NEW ORDER */}
+        <InTheTrenches />
         <ClientSection />
+
         <ContactSection />
 
         <footer className="Footer">
