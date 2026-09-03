@@ -9,7 +9,7 @@
   overflow: hidden;
 
   /* BACKGROUND IMAGE */
-  background-image: url('/your-image.jpg'); /* replace with your actual path */
+  background-image: url('/assets/images/coaching-martin-2.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,32 +26,119 @@
     );
     z-index: 1;
   }
+}
+
+/* Your existing container still wraps intro + imgContainer */
+.container {
+  width: 100%;
+  max-width: 1352px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2; /* above background */
+}
+
+/* INTRO TEXT BLOCK */
+.intro {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 3;
+
+  h1 {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    color: #f9710b;
+  }
+
+  h2 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0;
+    color: white;
+    -webkit-text-stroke: 1.6px black;
+  }
+
+  p {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 360px;
+    color: #f7f7f7;
+  }
+}
+
+/* BUTTONS */
+.btns {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+
+  button {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* IMAGE CONTAINER — now hidden visually */
+.imgContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* hide image since background-image handles visuals */
+  }
+}
+
+/* Overlay still works */
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .Hero {
+    padding: 60px 20px;
+    text-align: center;
+
+    &::after {
+      background: rgba(0,0,0,0.45);
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
 
   .intro {
-    position: relative;
-    z-index: 2;
-    max-width: 520px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    h1 {
-      font-family: 'Glacial Indifference', sans-serif;
-      font-size: 2rem;
-      font-weight: 400;
-      margin: 0;
-      color: #f9710b;
-    }
-
-    h2 {
-      font-family: 'Antonio', sans-serif;
-      font-size: 4.4rem;
-      font-weight: 700;
-      letter-spacing: -1px;
-      margin: 0;
-      color: white;
-      -webkit-text-stroke: 1.6px black;
-    }
+    max-width: 100%;
+    align-items: center;
 
     p {
-      font-family: 'Glacial Indifference
+      max-width: 90%;
+    }
+
+    .btns {
+      justify-content: center;
+    }
+  }
+}
