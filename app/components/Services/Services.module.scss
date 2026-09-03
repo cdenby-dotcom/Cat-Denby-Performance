@@ -5,7 +5,6 @@
   background: #ecf0f3;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* optional */
 }
 
 .container {
@@ -48,15 +47,16 @@
 /* TWO CARD LAYOUT */
 .cards {
   display: flex;
-  gap: 40px;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 40px;
+  flex-wrap: nowrap; /* ⭐ forces side-by-side */
 }
 
+/* CARD */
 .card {
   flex: 1;
-  min-width: 480px;
   max-width: 600px;
+  min-width: 520px; /* ⭐ ensures they fit side-by-side */
   background: white;
   padding: 50px 40px;
   border-radius: 12px;
@@ -67,10 +67,8 @@
   gap: 20px;
   position: relative;
   text-align: left;
-}
 
-
-  /* KEEP YOUR CORNER GRAPHIC */
+  /* CORNER GRAPHIC */
   .cornerGradient {
     position: absolute;
     top: 0;
@@ -85,7 +83,7 @@
     );
   }
 
-  /* KEEP YOUR LOGO CIRCLE */
+  /* LOGO CIRCLE */
   .logo {
     width: 60px;
     height: 60px;
@@ -151,11 +149,13 @@
 /* MOBILE */
 @media (max-width: 900px) {
   .cards {
-    flex-direction: column;
+    flex-wrap: wrap; /* ⭐ stack on mobile */
     gap: 30px;
   }
 
   .card {
+    min-width: 100%;
+    max-width: 100%;
     padding: 40px 20px;
   }
 }
