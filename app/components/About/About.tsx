@@ -40,12 +40,12 @@ function About() {
 
         {/* RIGHT — EXPERIENCE LIST */}
         <div className={styles.experience}>
-          <div><BsFillCheckCircleFill /><span>Master's degree in Sports Science</span></div>
-          <div><BsFillCheckCircleFill /><span>NBA strength & conditioning experience</span></div>
-          <div><BsFillCheckCircleFill /><span>Evidence-based, periodized programming</span></div>
-          <div><BsFillCheckCircleFill /><span>10+ years coaching elite athletes</span></div>
-          <div><BsFillCheckCircleFill /><span>All levels welcome</span></div>
-          <div><BsFillCheckCircleFill /><span>Remote and in-person options available</span></div>
+          <div><BsFillCheckCircleFill className={styles.tick} /><span>Master's degree in Sports Science</span></div>
+          <div><BsFillCheckCircleFill className={styles.tick} /><span>NBA strength & conditioning experience</span></div>
+          <div><BsFillCheckCircleFill className={styles.tick} /><span>Evidence-based, periodized programming</span></div>
+          <div><BsFillCheckCircleFill className={styles.tick} /><span>10+ years coaching elite athletes</span></div>
+          <div><BsFillCheckCircleFill className={styles.tick} /><span>All levels welcome</span></div>
+          <div><BsFillCheckCircleFill className={styles.tick} /><span>Remote and in-person options available</span></div>
         </div>
 
       </div>
