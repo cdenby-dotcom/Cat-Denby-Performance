@@ -1,54 +1,56 @@
 .Hero {
   width: 100%;
-  margin: 0 auto;
   min-height: calc(100vh - 85px);
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
 
-  .container {
-    width: 1352px;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 0; /* remove spacing so overlap feels natural */
-    position: relative; /* allows overlap */
+  /* BACKGROUND IMAGE */
+  background-image: url('/your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* subtle darkening for readability */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.15)
+    );
+    z-index: 1;
   }
 
   .intro {
-    max-width: 38%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 8px;
-
-    /* OVERLAP MAGIC */
     position: relative;
     z-index: 2;
-    margin-right: -60px; /* pushes text INTO the image */
-    margin-top: 20px;    /* slight vertical offset for style */
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
     h1 {
       font-family: 'Glacial Indifference', sans-serif;
       font-size: 2rem;
       font-weight: 400;
-      margin: 0;
       color: #f9710b;
+      margin: 0;
     }
 
     h2 {
       font-family: 'Antonio', sans-serif;
-      font-size: 4.4rem;        /* bigger */
+      font-size: 4.4rem;
       font-weight: 700;
-      letter-spacing: -1px;     /* tighter */
+      letter-spacing: -1px;
       margin: 0;
-
       color: white;
       -webkit-text-stroke: 1.6px black;
-      text-stroke: 1.6px black;
     }
 
     p {
@@ -57,74 +59,4 @@
       font-size: 1rem;
       line-height: 1.4;
       max-width: 360px;
-      margin-top: 10px;
-    }
-
-    .btns {
-      margin-top: 18px;
-      display: flex;
-      justify-content: flex-start;
-
-      button {
-        font-family: 'Glacial Indifference', sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        padding: 12px 28px;
-        border-radius: 6px;
-        letter-spacing: 0.5px;
-      }
-    }
-  }
-
-  .imgContainer {
-    position: relative;
-    max-width: 62%; /* bigger image */
-    border-radius: 20px;
-    z-index: 1;
-
-    img {
-      width: 100%;
-      border-radius: 20px;
-      object-fit: cover;
-    }
-  }
-
-  .heroOverlay {
-    position: absolute;
-    inset: 0;
-    border-radius: 20px;
-    background: linear-gradient(
-      to right,
-      rgba(247, 247, 247, 0.1),
-      rgba(247, 247, 247, 0)
-    );
-  }
-}
-
-@media (max-width: 900px) {
-  .Hero {
-    text-align: center;
-
-    .container {
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    .intro {
-      max-width: 100%;
-      padding: 0 15px;
-      margin-right: 0; /* remove overlap on mobile */
-      margin-top: 0;
-      align-items: center;
-      text-align: center;
-
-      .btns {
-        justify-content: center;
-      }
-    }
-
-    .imgContainer {
-      max-width: 100%;
-    }
-  }
-}
+      color: #
