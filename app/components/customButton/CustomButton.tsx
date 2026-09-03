@@ -3,39 +3,14 @@ import styles from "./CustomButton.module.scss";
 
 const CustomButton = (props: any) => {
   const {
-    backgroundColor,
-    color,
-    border,
-    onClick,
     value,
-    href
-  } = props;
+    onClick,
+    href,
 
-  return (
-    <button
-      className={styles.Btn}
-      style={{
-        backgroundColor,
-        color,
-        border,
-      }}
-      onClick={onClick}
-    >
-      {value}
-    </button>
-  );
-};
-import React from "react";
-import styles from "./CustomButton.module.scss";
-
-const CustomButton = (props: any) => {
-  const {
+    // SAFE DEFAULTS — prevents Chrome mobile blue text
     backgroundColor = "#f9710b",
     color = "white",
     border = "none",
-    onClick,
-    value,
-    href
   } = props;
 
   return (
@@ -54,5 +29,3 @@ const CustomButton = (props: any) => {
 };
 
 export default CustomButton;
-
-
