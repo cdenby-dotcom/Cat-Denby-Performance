@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
 
-  /* TYPOGRAPHY */
   h1, h2, h3 {
     font-family: 'Antonio', sans-serif;
   }
@@ -22,36 +21,42 @@
     gap: 40px;
   }
 
-  .box {
+  .centeredTitle {
+    text-align: center;
+    font-size: 2.6rem;
+    margin: 10px 0 25px 0;
+    text-transform: uppercase;
+  }
+
+  .centeredSub {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .orange {
+    color: #f9710b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .offerBox,
+  .contactBox {
     background: white;
     padding: 40px;
     border-radius: 12px;
     border: 1px solid #d4d4d3;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
 
-    .orange {
-      color: #f9710b;
-      letter-spacing: 1px;
-      font-size: 0.9rem;
-    }
+  .section {
+    margin-bottom: 25px;
 
-    h2 {
-      font-size: 2.6rem;
-      margin: 10px 0 25px 0;
-    }
-
-    .section {
-      margin-bottom: 25px;
-
-      h3 {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-      }
-
-      p {
-        line-height: 1.6;
-        color: #333;
-      }
+    p {
+      line-height: 1.6;
+      color: #333;
     }
   }
 
