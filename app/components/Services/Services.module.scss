@@ -49,14 +49,13 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-wrap: nowrap; /* forces side-by-side */
+  flex-wrap: nowrap; /* force side-by-side */
 }
 
 /* CARD */
 .card {
-  flex: 1;
-  min-width: 520px; /* ensures they fit side-by-side */
-  max-width: 600px;
+  width: 50%;              /* ⭐ stable, predictable */
+  max-width: 600px;        /* matches About aesthetic */
   background: white;
   padding: 50px 40px;
   border-radius: 12px;
@@ -154,7 +153,7 @@
   }
 
   .card {
-    min-width: 100%;
+    width: 100%;     /* full width on mobile */
     max-width: 100%;
     padding: 40px 20px;
   }
